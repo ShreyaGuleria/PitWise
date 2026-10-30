@@ -1,0 +1,441 @@
+season,round,circuit,race_date,driver,grid_position,finish_status,num_stops,air_temp_mean,rain,is_finisher,possible_red_flag,exclude_reason,data_complete
+2023,1,Bahrain International Circuit,2023-03-05,VER,1,Finished,2,26.433333333333337,False,True,False,,True
+2023,1,Bahrain International Circuit,2023-03-05,PER,2,Finished,2,26.433333333333337,False,True,False,,True
+2023,1,Bahrain International Circuit,2023-03-05,ALO,5,Finished,2,26.433333333333337,False,True,False,,True
+2023,1,Bahrain International Circuit,2023-03-05,SAI,4,Finished,2,26.433333333333337,False,True,False,,True
+2023,1,Bahrain International Circuit,2023-03-05,HAM,7,Finished,2,26.433333333333337,False,True,False,,True
+2023,1,Bahrain International Circuit,2023-03-05,STR,8,Finished,2,26.433333333333337,False,True,False,,True
+2023,1,Bahrain International Circuit,2023-03-05,RUS,6,Finished,2,26.433333333333337,False,True,False,,True
+2023,1,Bahrain International Circuit,2023-03-05,BOT,12,Finished,2,26.433333333333337,False,True,False,,True
+2023,1,Bahrain International Circuit,2023-03-05,GAS,20,Finished,3,26.433333333333337,False,True,False,,True
+2023,1,Bahrain International Circuit,2023-03-05,ALB,15,Finished,3,26.433333333333337,False,True,False,,True
+2023,1,Bahrain International Circuit,2023-03-05,TSU,14,Finished,3,26.433333333333337,False,True,False,,True
+2023,1,Bahrain International Circuit,2023-03-05,SAR,16,Lapped,3,26.433333333333337,False,True,False,,True
+2023,1,Bahrain International Circuit,2023-03-05,MAG,17,Lapped,3,26.433333333333337,False,True,False,,True
+2023,1,Bahrain International Circuit,2023-03-05,DEV,19,Lapped,2,26.433333333333337,False,True,False,,True
+2023,1,Bahrain International Circuit,2023-03-05,HUL,10,Lapped,3,26.433333333333337,False,True,False,,True
+2023,1,Bahrain International Circuit,2023-03-05,ZHO,13,Lapped,3,26.433333333333337,False,True,False,,True
+2023,1,Bahrain International Circuit,2023-03-05,NOR,11,Lapped,6,26.433333333333337,False,True,False,outlier_stops,True
+2023,1,Bahrain International Circuit,2023-03-05,OCO,9,Retired,3,26.433333333333337,False,False,False,retired,True
+2023,1,Bahrain International Circuit,2023-03-05,LEC,3,Retired,2,26.433333333333337,False,False,False,retired,True
+2023,1,Bahrain International Circuit,2023-03-05,PIA,18,Retired,0,26.433333333333337,False,False,False,retired;no_pit_data,True
+2023,2,Jeddah Corniche Circuit,2023-03-19,PER,1,Finished,1,24.133333333333336,False,True,False,,True
+2023,2,Jeddah Corniche Circuit,2023-03-19,VER,15,Finished,1,24.133333333333336,False,True,False,,True
+2023,2,Jeddah Corniche Circuit,2023-03-19,ALO,2,Finished,1,24.133333333333336,False,True,False,,True
+2023,2,Jeddah Corniche Circuit,2023-03-19,RUS,3,Finished,1,24.133333333333336,False,True,False,,True
+2023,2,Jeddah Corniche Circuit,2023-03-19,HAM,7,Finished,1,24.133333333333336,False,True,False,,True
+2023,2,Jeddah Corniche Circuit,2023-03-19,SAI,4,Finished,1,24.133333333333336,False,True,False,,True
+2023,2,Jeddah Corniche Circuit,2023-03-19,LEC,12,Finished,1,24.133333333333336,False,True,False,,True
+2023,2,Jeddah Corniche Circuit,2023-03-19,OCO,6,Finished,1,24.133333333333336,False,True,False,,True
+2023,2,Jeddah Corniche Circuit,2023-03-19,GAS,9,Finished,1,24.133333333333336,False,True,False,,True
+2023,2,Jeddah Corniche Circuit,2023-03-19,MAG,13,Finished,1,24.133333333333336,False,True,False,,True
+2023,2,Jeddah Corniche Circuit,2023-03-19,TSU,16,Finished,1,24.133333333333336,False,True,False,,True
+2023,2,Jeddah Corniche Circuit,2023-03-19,HUL,10,Finished,1,24.133333333333336,False,True,False,,True
+2023,2,Jeddah Corniche Circuit,2023-03-19,ZHO,11,Finished,2,24.133333333333336,False,True,False,,True
+2023,2,Jeddah Corniche Circuit,2023-03-19,DEV,18,Finished,1,24.133333333333336,False,True,False,,True
+2023,2,Jeddah Corniche Circuit,2023-03-19,PIA,8,Finished,1,24.133333333333336,False,True,False,,True
+2023,2,Jeddah Corniche Circuit,2023-03-19,SAR,20,Finished,1,24.133333333333336,False,True,False,,True
+2023,2,Jeddah Corniche Circuit,2023-03-19,NOR,19,Finished,2,24.133333333333336,False,True,False,,True
+2023,2,Jeddah Corniche Circuit,2023-03-19,BOT,14,Lapped,3,24.133333333333336,False,True,False,,True
+2023,2,Jeddah Corniche Circuit,2023-03-19,ALB,17,Retired,1,24.133333333333336,False,False,False,retired,True
+2023,2,Jeddah Corniche Circuit,2023-03-19,STR,5,Retired,1,24.133333333333336,False,False,False,retired,True
+2023,3,Albert Park Grand Prix Circuit,2023-04-02,VER,1,Finished,3,16.566666666666666,False,True,True,possible_red_flag,True
+2023,3,Albert Park Grand Prix Circuit,2023-04-02,HAM,3,Finished,3,16.566666666666666,False,True,True,possible_red_flag,True
+2023,3,Albert Park Grand Prix Circuit,2023-04-02,ALO,4,Finished,3,16.566666666666666,False,True,True,possible_red_flag,True
+2023,3,Albert Park Grand Prix Circuit,2023-04-02,STR,6,Finished,3,16.566666666666666,False,True,True,possible_red_flag,True
+2023,3,Albert Park Grand Prix Circuit,2023-04-02,PER,20,Finished,5,16.566666666666666,False,True,True,outlier_stops;possible_red_flag,True
+2023,3,Albert Park Grand Prix Circuit,2023-04-02,NOR,13,Finished,3,16.566666666666666,False,True,True,possible_red_flag,True
+2023,3,Albert Park Grand Prix Circuit,2023-04-02,HUL,10,Finished,3,16.566666666666666,False,True,True,possible_red_flag,True
+2023,3,Albert Park Grand Prix Circuit,2023-04-02,PIA,16,Finished,4,16.566666666666666,False,True,True,possible_red_flag,True
+2023,3,Albert Park Grand Prix Circuit,2023-04-02,ZHO,17,Finished,5,16.566666666666666,False,True,True,outlier_stops;possible_red_flag,True
+2023,3,Albert Park Grand Prix Circuit,2023-04-02,TSU,12,Finished,4,16.566666666666666,False,True,True,possible_red_flag,True
+2023,3,Albert Park Grand Prix Circuit,2023-04-02,BOT,19,Finished,6,16.566666666666666,False,True,True,outlier_stops;possible_red_flag,True
+2023,3,Albert Park Grand Prix Circuit,2023-04-02,SAI,5,Finished,4,16.566666666666666,False,True,True,possible_red_flag,True
+2023,3,Albert Park Grand Prix Circuit,2023-04-02,GAS,9,Retired,2,16.566666666666666,False,False,True,retired;possible_red_flag,True
+2023,3,Albert Park Grand Prix Circuit,2023-04-02,OCO,11,Retired,3,16.566666666666666,False,False,True,retired;possible_red_flag,True
+2023,3,Albert Park Grand Prix Circuit,2023-04-02,DEV,15,Retired,4,16.566666666666666,False,False,True,retired;possible_red_flag,True
+2023,3,Albert Park Grand Prix Circuit,2023-04-02,SAR,18,Retired,6,16.566666666666666,False,False,True,retired;outlier_stops;possible_red_flag,True
+2023,3,Albert Park Grand Prix Circuit,2023-04-02,MAG,14,Retired,2,16.566666666666666,False,False,True,retired;possible_red_flag,True
+2023,3,Albert Park Grand Prix Circuit,2023-04-02,RUS,2,Retired,2,16.566666666666666,False,False,True,retired;possible_red_flag,True
+2023,3,Albert Park Grand Prix Circuit,2023-04-02,ALB,8,Retired,0,16.566666666666666,False,False,True,retired;no_pit_data;possible_red_flag,True
+2023,3,Albert Park Grand Prix Circuit,2023-04-02,LEC,7,Retired,0,16.566666666666666,False,False,True,retired;no_pit_data;possible_red_flag,True
+2023,4,Baku City Circuit,2023-04-30,PER,3,Finished,1,26.0,False,True,False,,True
+2023,4,Baku City Circuit,2023-04-30,VER,2,Finished,1,26.0,False,True,False,,True
+2023,4,Baku City Circuit,2023-04-30,LEC,1,Finished,1,26.0,False,True,False,,True
+2023,4,Baku City Circuit,2023-04-30,ALO,6,Finished,1,26.0,False,True,False,,True
+2023,4,Baku City Circuit,2023-04-30,SAI,4,Finished,1,26.0,False,True,False,,True
+2023,4,Baku City Circuit,2023-04-30,HAM,5,Finished,1,26.0,False,True,False,,True
+2023,4,Baku City Circuit,2023-04-30,STR,9,Finished,1,26.0,False,True,False,,True
+2023,4,Baku City Circuit,2023-04-30,RUS,11,Finished,2,26.0,False,True,False,,True
+2023,4,Baku City Circuit,2023-04-30,NOR,7,Finished,1,26.0,False,True,False,,True
+2023,4,Baku City Circuit,2023-04-30,TSU,8,Finished,1,26.0,False,True,False,,True
+2023,4,Baku City Circuit,2023-04-30,PIA,10,Finished,1,26.0,False,True,False,,True
+2023,4,Baku City Circuit,2023-04-30,ALB,12,Finished,1,26.0,False,True,False,,True
+2023,4,Baku City Circuit,2023-04-30,MAG,16,Finished,1,26.0,False,True,False,,True
+2023,4,Baku City Circuit,2023-04-30,GAS,17,Finished,2,26.0,False,True,False,,True
+2023,4,Baku City Circuit,2023-04-30,OCO,19,Finished,1,26.0,False,True,False,,True
+2023,4,Baku City Circuit,2023-04-30,SAR,14,Finished,1,26.0,False,True,False,,True
+2023,4,Baku City Circuit,2023-04-30,HUL,20,Lapped,1,26.0,False,True,False,,True
+2023,4,Baku City Circuit,2023-04-30,BOT,13,Lapped,3,26.0,False,True,False,,True
+2023,4,Baku City Circuit,2023-04-30,ZHO,15,Retired,1,26.0,False,False,False,retired,True
+2023,4,Baku City Circuit,2023-04-30,DEV,18,Retired,0,26.0,False,False,False,retired;no_pit_data,True
+2023,5,Miami International Autodrome,2023-05-07,VER,9,Finished,1,26.6,True,True,False,,True
+2023,5,Miami International Autodrome,2023-05-07,PER,1,Finished,1,26.6,True,True,False,,True
+2023,5,Miami International Autodrome,2023-05-07,ALO,2,Finished,1,26.6,True,True,False,,True
+2023,5,Miami International Autodrome,2023-05-07,RUS,6,Finished,1,26.6,True,True,False,,True
+2023,5,Miami International Autodrome,2023-05-07,SAI,3,Finished,1,26.6,True,True,False,,True
+2023,5,Miami International Autodrome,2023-05-07,HAM,13,Finished,1,26.6,True,True,False,,True
+2023,5,Miami International Autodrome,2023-05-07,LEC,7,Finished,1,26.6,True,True,False,,True
+2023,5,Miami International Autodrome,2023-05-07,GAS,5,Finished,1,26.6,True,True,False,,True
+2023,5,Miami International Autodrome,2023-05-07,OCO,8,Finished,1,26.6,True,True,False,,True
+2023,5,Miami International Autodrome,2023-05-07,MAG,4,Finished,1,26.6,True,True,False,,True
+2023,5,Miami International Autodrome,2023-05-07,TSU,17,Finished,1,26.6,True,True,False,,True
+2023,5,Miami International Autodrome,2023-05-07,STR,18,Finished,1,26.6,True,True,False,,True
+2023,5,Miami International Autodrome,2023-05-07,BOT,10,Finished,1,26.6,True,True,False,,True
+2023,5,Miami International Autodrome,2023-05-07,ALB,11,Finished,1,26.6,True,True,False,,True
+2023,5,Miami International Autodrome,2023-05-07,HUL,12,Finished,1,26.6,True,True,False,,True
+2023,5,Miami International Autodrome,2023-05-07,ZHO,14,Finished,1,26.6,True,True,False,,True
+2023,5,Miami International Autodrome,2023-05-07,NOR,16,Finished,1,26.6,True,True,False,,True
+2023,5,Miami International Autodrome,2023-05-07,DEV,15,Finished,1,26.6,True,True,False,,True
+2023,5,Miami International Autodrome,2023-05-07,PIA,19,Lapped,1,26.6,True,True,False,,True
+2023,5,Miami International Autodrome,2023-05-07,SAR,20,Lapped,1,26.6,True,True,False,,True
+2023,6,Circuit de Monaco,2023-05-28,VER,1,Finished,1,24.066666666666663,True,True,False,,True
+2023,6,Circuit de Monaco,2023-05-28,ALO,2,Finished,2,24.066666666666663,True,True,False,,True
+2023,6,Circuit de Monaco,2023-05-28,OCO,3,Finished,2,24.066666666666663,True,True,False,,True
+2023,6,Circuit de Monaco,2023-05-28,HAM,5,Finished,2,24.066666666666663,True,True,False,,True
+2023,6,Circuit de Monaco,2023-05-28,RUS,8,Finished,1,24.066666666666663,True,True,False,,True
+2023,6,Circuit de Monaco,2023-05-28,LEC,6,Finished,2,24.066666666666663,True,True,False,,True
+2023,6,Circuit de Monaco,2023-05-28,GAS,7,Finished,2,24.066666666666663,True,True,False,,True
+2023,6,Circuit de Monaco,2023-05-28,SAI,4,Finished,2,24.066666666666663,True,True,False,,True
+2023,6,Circuit de Monaco,2023-05-28,NOR,10,Lapped,2,24.066666666666663,True,True,False,,True
+2023,6,Circuit de Monaco,2023-05-28,PIA,11,Lapped,1,24.066666666666663,True,True,False,,True
+2023,6,Circuit de Monaco,2023-05-28,BOT,15,Lapped,1,24.066666666666663,True,True,False,,True
+2023,6,Circuit de Monaco,2023-05-28,DEV,12,Lapped,1,24.066666666666663,True,True,False,,True
+2023,6,Circuit de Monaco,2023-05-28,ZHO,19,Lapped,2,24.066666666666663,True,True,False,,True
+2023,6,Circuit de Monaco,2023-05-28,ALB,13,Lapped,2,24.066666666666663,True,True,False,,True
+2023,6,Circuit de Monaco,2023-05-28,TSU,9,Lapped,1,24.066666666666663,True,True,False,,True
+2023,6,Circuit de Monaco,2023-05-28,PER,20,Lapped,5,24.066666666666663,True,True,False,outlier_stops,True
+2023,6,Circuit de Monaco,2023-05-28,HUL,18,Lapped,3,24.066666666666663,True,True,False,,True
+2023,6,Circuit de Monaco,2023-05-28,SAR,16,Lapped,3,24.066666666666663,True,True,False,,True
+2023,6,Circuit de Monaco,2023-05-28,MAG,17,Retired,1,24.066666666666663,True,False,False,retired,True
+2023,6,Circuit de Monaco,2023-05-28,STR,14,Retired,1,24.066666666666663,True,False,False,retired,True
+2023,7,Circuit de Barcelona-Catalunya,2023-06-04,VER,1,Finished,2,22.46666666666667,True,True,False,,True
+2023,7,Circuit de Barcelona-Catalunya,2023-06-04,HAM,4,Finished,2,22.46666666666667,True,True,False,,True
+2023,7,Circuit de Barcelona-Catalunya,2023-06-04,RUS,12,Finished,2,22.46666666666667,True,True,False,,True
+2023,7,Circuit de Barcelona-Catalunya,2023-06-04,PER,11,Finished,2,22.46666666666667,True,True,False,,True
+2023,7,Circuit de Barcelona-Catalunya,2023-06-04,SAI,2,Finished,2,22.46666666666667,True,True,False,,True
+2023,7,Circuit de Barcelona-Catalunya,2023-06-04,STR,5,Finished,2,22.46666666666667,True,True,False,,True
+2023,7,Circuit de Barcelona-Catalunya,2023-06-04,ALO,8,Finished,2,22.46666666666667,True,True,False,,True
+2023,7,Circuit de Barcelona-Catalunya,2023-06-04,OCO,6,Finished,2,22.46666666666667,True,True,False,,True
+2023,7,Circuit de Barcelona-Catalunya,2023-06-04,ZHO,13,Finished,2,22.46666666666667,True,True,False,,True
+2023,7,Circuit de Barcelona-Catalunya,2023-06-04,GAS,10,Finished,2,22.46666666666667,True,True,False,,True
+2023,7,Circuit de Barcelona-Catalunya,2023-06-04,LEC,19,Finished,2,22.46666666666667,True,True,False,,True
+2023,7,Circuit de Barcelona-Catalunya,2023-06-04,TSU,15,Finished,2,22.46666666666667,True,True,False,,True
+2023,7,Circuit de Barcelona-Catalunya,2023-06-04,PIA,9,Lapped,2,22.46666666666667,True,True,False,,True
+2023,7,Circuit de Barcelona-Catalunya,2023-06-04,DEV,14,Lapped,2,22.46666666666667,True,True,False,,True
+2023,7,Circuit de Barcelona-Catalunya,2023-06-04,HUL,7,Lapped,3,22.46666666666667,True,True,False,,True
+2023,7,Circuit de Barcelona-Catalunya,2023-06-04,ALB,18,Lapped,2,22.46666666666667,True,True,False,,True
+2023,7,Circuit de Barcelona-Catalunya,2023-06-04,NOR,3,Lapped,3,22.46666666666667,True,True,False,,True
+2023,7,Circuit de Barcelona-Catalunya,2023-06-04,MAG,17,Lapped,3,22.46666666666667,True,True,False,,True
+2023,7,Circuit de Barcelona-Catalunya,2023-06-04,BOT,16,Lapped,2,22.46666666666667,True,True,False,,True
+2023,7,Circuit de Barcelona-Catalunya,2023-06-04,SAR,20,Lapped,2,22.46666666666667,True,True,False,,True
+2023,8,Circuit Gilles Villeneuve,2023-06-18,VER,1,Finished,2,19.2,False,True,False,,True
+2023,8,Circuit Gilles Villeneuve,2023-06-18,ALO,2,Finished,2,19.2,False,True,False,,True
+2023,8,Circuit Gilles Villeneuve,2023-06-18,HAM,3,Finished,2,19.2,False,True,False,,True
+2023,8,Circuit Gilles Villeneuve,2023-06-18,LEC,10,Finished,1,19.2,False,True,False,,True
+2023,8,Circuit Gilles Villeneuve,2023-06-18,SAI,11,Finished,1,19.2,False,True,False,,True
+2023,8,Circuit Gilles Villeneuve,2023-06-18,PER,12,Finished,2,19.2,False,True,False,,True
+2023,8,Circuit Gilles Villeneuve,2023-06-18,ALB,9,Finished,1,19.2,False,True,False,,True
+2023,8,Circuit Gilles Villeneuve,2023-06-18,OCO,6,Finished,2,19.2,False,True,False,,True
+2023,8,Circuit Gilles Villeneuve,2023-06-18,STR,16,Finished,2,19.2,False,True,False,,True
+2023,8,Circuit Gilles Villeneuve,2023-06-18,BOT,14,Finished,1,19.2,False,True,False,,True
+2023,8,Circuit Gilles Villeneuve,2023-06-18,PIA,8,Finished,2,19.2,False,True,False,,True
+2023,8,Circuit Gilles Villeneuve,2023-06-18,GAS,15,Finished,2,19.2,False,True,False,,True
+2023,8,Circuit Gilles Villeneuve,2023-06-18,NOR,7,Finished,2,19.2,False,True,False,,True
+2023,8,Circuit Gilles Villeneuve,2023-06-18,TSU,19,Finished,2,19.2,False,True,False,,True
+2023,8,Circuit Gilles Villeneuve,2023-06-18,HUL,5,Lapped,2,19.2,False,True,False,,True
+2023,8,Circuit Gilles Villeneuve,2023-06-18,ZHO,20,Lapped,2,19.2,False,True,False,,True
+2023,8,Circuit Gilles Villeneuve,2023-06-18,MAG,13,Lapped,2,19.2,False,True,False,,True
+2023,8,Circuit Gilles Villeneuve,2023-06-18,DEV,17,Lapped,2,19.2,False,True,False,,True
+2023,8,Circuit Gilles Villeneuve,2023-06-18,RUS,4,Retired,1,19.2,False,False,False,retired,True
+2023,8,Circuit Gilles Villeneuve,2023-06-18,SAR,18,Retired,0,19.2,False,False,False,retired;no_pit_data,True
+2023,9,Red Bull Ring,2023-07-02,VER,1,Finished,4,23.53333333333333,False,True,False,,True
+2023,9,Red Bull Ring,2023-07-02,LEC,2,Finished,3,23.53333333333333,False,True,False,,True
+2023,9,Red Bull Ring,2023-07-02,PER,15,Finished,3,23.53333333333333,False,True,False,,True
+2023,9,Red Bull Ring,2023-07-02,NOR,4,Finished,3,23.53333333333333,False,True,False,,True
+2023,9,Red Bull Ring,2023-07-02,ALO,7,Finished,3,23.53333333333333,False,True,False,,True
+2023,9,Red Bull Ring,2023-07-02,SAI,3,Finished,3,23.53333333333333,False,True,False,,True
+2023,9,Red Bull Ring,2023-07-02,RUS,11,Finished,3,23.53333333333333,False,True,False,,True
+2023,9,Red Bull Ring,2023-07-02,HAM,5,Finished,3,23.53333333333333,False,True,False,,True
+2023,9,Red Bull Ring,2023-07-02,STR,6,Finished,4,23.53333333333333,False,True,False,,True
+2023,9,Red Bull Ring,2023-07-02,GAS,9,Finished,3,23.53333333333333,False,True,False,,True
+2023,9,Red Bull Ring,2023-07-02,ALB,10,Finished,3,23.53333333333333,False,True,False,,True
+2023,9,Red Bull Ring,2023-07-02,ZHO,17,Lapped,3,23.53333333333333,False,True,False,,True
+2023,9,Red Bull Ring,2023-07-02,SAR,18,Lapped,3,23.53333333333333,False,True,False,,True
+2023,9,Red Bull Ring,2023-07-02,OCO,12,Lapped,3,23.53333333333333,False,True,False,,True
+2023,9,Red Bull Ring,2023-07-02,BOT,14,Lapped,3,23.53333333333333,False,True,False,,True
+2023,9,Red Bull Ring,2023-07-02,PIA,13,Lapped,4,23.53333333333333,False,True,False,,True
+2023,9,Red Bull Ring,2023-07-02,DEV,20,Lapped,3,23.53333333333333,False,True,False,,True
+2023,9,Red Bull Ring,2023-07-02,MAG,19,Lapped,3,23.53333333333333,False,True,False,,True
+2023,9,Red Bull Ring,2023-07-02,TSU,16,Lapped,4,23.53333333333333,False,True,False,,True
+2023,9,Red Bull Ring,2023-07-02,HUL,8,Retired,2,23.53333333333333,False,False,False,retired,True
+2023,10,Silverstone Circuit,2023-07-09,VER,1,Finished,1,21.73333333333333,False,True,False,,True
+2023,10,Silverstone Circuit,2023-07-09,NOR,2,Finished,1,21.73333333333333,False,True,False,,True
+2023,10,Silverstone Circuit,2023-07-09,HAM,7,Finished,1,21.73333333333333,False,True,False,,True
+2023,10,Silverstone Circuit,2023-07-09,PIA,3,Finished,1,21.73333333333333,False,True,False,,True
+2023,10,Silverstone Circuit,2023-07-09,RUS,6,Finished,1,21.73333333333333,False,True,False,,True
+2023,10,Silverstone Circuit,2023-07-09,PER,15,Finished,1,21.73333333333333,False,True,False,,True
+2023,10,Silverstone Circuit,2023-07-09,ALO,9,Finished,1,21.73333333333333,False,True,False,,True
+2023,10,Silverstone Circuit,2023-07-09,ALB,8,Finished,1,21.73333333333333,False,True,False,,True
+2023,10,Silverstone Circuit,2023-07-09,LEC,4,Finished,2,21.73333333333333,False,True,False,,True
+2023,10,Silverstone Circuit,2023-07-09,SAI,5,Finished,1,21.73333333333333,False,True,False,,True
+2023,10,Silverstone Circuit,2023-07-09,SAR,14,Finished,1,21.73333333333333,False,True,False,,True
+2023,10,Silverstone Circuit,2023-07-09,BOT,20,Finished,1,21.73333333333333,False,True,False,,True
+2023,10,Silverstone Circuit,2023-07-09,HUL,11,Finished,2,21.73333333333333,False,True,False,,True
+2023,10,Silverstone Circuit,2023-07-09,STR,12,Finished,1,21.73333333333333,False,True,False,,True
+2023,10,Silverstone Circuit,2023-07-09,ZHO,17,Finished,3,21.73333333333333,False,True,False,,True
+2023,10,Silverstone Circuit,2023-07-09,TSU,16,Finished,2,21.73333333333333,False,True,False,,True
+2023,10,Silverstone Circuit,2023-07-09,DEV,18,Finished,2,21.73333333333333,False,True,False,,True
+2023,10,Silverstone Circuit,2023-07-09,GAS,10,Retired,1,21.73333333333333,False,False,False,retired,True
+2023,10,Silverstone Circuit,2023-07-09,MAG,19,Retired,0,21.73333333333333,False,False,False,retired;no_pit_data,True
+2023,10,Silverstone Circuit,2023-07-09,OCO,13,Retired,0,21.73333333333333,False,False,False,retired;no_pit_data,True
+2023,11,Hungaroring,2023-07-23,VER,2,Finished,2,28.900000000000002,False,True,False,,True
+2023,11,Hungaroring,2023-07-23,NOR,3,Finished,2,28.900000000000002,False,True,False,,True
+2023,11,Hungaroring,2023-07-23,PER,9,Finished,2,28.900000000000002,False,True,False,,True
+2023,11,Hungaroring,2023-07-23,HAM,1,Finished,2,28.900000000000002,False,True,False,,True
+2023,11,Hungaroring,2023-07-23,PIA,4,Finished,2,28.900000000000002,False,True,False,,True
+2023,11,Hungaroring,2023-07-23,RUS,18,Finished,2,28.900000000000002,False,True,False,,True
+2023,11,Hungaroring,2023-07-23,LEC,6,Finished,2,28.900000000000002,False,True,False,,True
+2023,11,Hungaroring,2023-07-23,SAI,11,Finished,2,28.900000000000002,False,True,False,,True
+2023,11,Hungaroring,2023-07-23,ALO,8,Finished,2,28.900000000000002,False,True,False,,True
+2023,11,Hungaroring,2023-07-23,STR,14,Lapped,2,28.900000000000002,False,True,False,,True
+2023,11,Hungaroring,2023-07-23,ALB,16,Lapped,2,28.900000000000002,False,True,False,,True
+2023,11,Hungaroring,2023-07-23,BOT,7,Lapped,2,28.900000000000002,False,True,False,,True
+2023,11,Hungaroring,2023-07-23,RIC,13,Lapped,2,28.900000000000002,False,True,False,,True
+2023,11,Hungaroring,2023-07-23,HUL,10,Lapped,2,28.900000000000002,False,True,False,,True
+2023,11,Hungaroring,2023-07-23,TSU,17,Lapped,2,28.900000000000002,False,True,False,,True
+2023,11,Hungaroring,2023-07-23,ZHO,5,Lapped,2,28.900000000000002,False,True,False,,True
+2023,11,Hungaroring,2023-07-23,MAG,19,Lapped,2,28.900000000000002,False,True,False,,True
+2023,11,Hungaroring,2023-07-23,SAR,20,Retired,2,28.900000000000002,False,False,False,retired,True
+2023,11,Hungaroring,2023-07-23,OCO,12,Retired,0,28.900000000000002,False,False,False,retired;no_pit_data,True
+2023,11,Hungaroring,2023-07-23,GAS,15,Retired,0,28.900000000000002,False,False,False,retired;no_pit_data,True
+2023,12,Circuit de Spa-Francorchamps,2023-07-30,VER,6,Finished,2,17.599999999999998,True,True,False,,True
+2023,12,Circuit de Spa-Francorchamps,2023-07-30,PER,2,Finished,2,17.599999999999998,True,True,False,,True
+2023,12,Circuit de Spa-Francorchamps,2023-07-30,LEC,1,Finished,2,17.599999999999998,True,True,False,,True
+2023,12,Circuit de Spa-Francorchamps,2023-07-30,HAM,3,Finished,3,17.599999999999998,True,True,False,,True
+2023,12,Circuit de Spa-Francorchamps,2023-07-30,ALO,9,Finished,2,17.599999999999998,True,True,False,,True
+2023,12,Circuit de Spa-Francorchamps,2023-07-30,RUS,8,Finished,1,17.599999999999998,True,True,False,,True
+2023,12,Circuit de Spa-Francorchamps,2023-07-30,NOR,7,Finished,2,17.599999999999998,True,True,False,,True
+2023,12,Circuit de Spa-Francorchamps,2023-07-30,OCO,14,Finished,2,17.599999999999998,True,True,False,,True
+2023,12,Circuit de Spa-Francorchamps,2023-07-30,STR,10,Finished,1,17.599999999999998,True,True,False,,True
+2023,12,Circuit de Spa-Francorchamps,2023-07-30,TSU,11,Finished,2,17.599999999999998,True,True,False,,True
+2023,12,Circuit de Spa-Francorchamps,2023-07-30,GAS,12,Finished,1,17.599999999999998,True,True,False,,True
+2023,12,Circuit de Spa-Francorchamps,2023-07-30,BOT,13,Finished,2,17.599999999999998,True,True,False,,True
+2023,12,Circuit de Spa-Francorchamps,2023-07-30,ZHO,17,Finished,2,17.599999999999998,True,True,False,,True
+2023,12,Circuit de Spa-Francorchamps,2023-07-30,ALB,15,Finished,3,17.599999999999998,True,True,False,,True
+2023,12,Circuit de Spa-Francorchamps,2023-07-30,MAG,16,Finished,2,17.599999999999998,True,True,False,,True
+2023,12,Circuit de Spa-Francorchamps,2023-07-30,RIC,19,Finished,2,17.599999999999998,True,True,False,,True
+2023,12,Circuit de Spa-Francorchamps,2023-07-30,SAR,18,Finished,3,17.599999999999998,True,True,False,,True
+2023,12,Circuit de Spa-Francorchamps,2023-07-30,HUL,20,Finished,2,17.599999999999998,True,True,False,,True
+2023,12,Circuit de Spa-Francorchamps,2023-07-30,SAI,4,Retired,1,17.599999999999998,True,False,False,retired,True
+2023,12,Circuit de Spa-Francorchamps,2023-07-30,PIA,5,Retired,0,17.599999999999998,True,False,False,retired;no_pit_data,True
+2023,13,Circuit Park Zandvoort,2023-08-27,VER,1,Finished,6,16.5,True,True,True,outlier_stops;possible_red_flag,True
+2023,13,Circuit Park Zandvoort,2023-08-27,ALO,5,Finished,5,16.5,True,True,True,outlier_stops;possible_red_flag,True
+2023,13,Circuit Park Zandvoort,2023-08-27,GAS,12,Finished,5,16.5,True,True,True,outlier_stops;possible_red_flag,True
+2023,13,Circuit Park Zandvoort,2023-08-27,PER,7,Finished,6,16.5,True,True,True,outlier_stops;possible_red_flag,True
+2023,13,Circuit Park Zandvoort,2023-08-27,SAI,6,Finished,5,16.5,True,True,True,outlier_stops;possible_red_flag,True
+2023,13,Circuit Park Zandvoort,2023-08-27,HAM,13,Finished,5,16.5,True,True,True,outlier_stops;possible_red_flag,True
+2023,13,Circuit Park Zandvoort,2023-08-27,NOR,2,Finished,6,16.5,True,True,True,outlier_stops;possible_red_flag,True
+2023,13,Circuit Park Zandvoort,2023-08-27,ALB,4,Finished,4,16.5,True,True,True,possible_red_flag,True
+2023,13,Circuit Park Zandvoort,2023-08-27,PIA,8,Finished,5,16.5,True,True,True,outlier_stops;possible_red_flag,True
+2023,13,Circuit Park Zandvoort,2023-08-27,OCO,16,Finished,6,16.5,True,True,True,outlier_stops;possible_red_flag,True
+2023,13,Circuit Park Zandvoort,2023-08-27,STR,11,Finished,7,16.5,True,True,True,outlier_stops;possible_red_flag,True
+2023,13,Circuit Park Zandvoort,2023-08-27,HUL,14,Finished,5,16.5,True,True,True,outlier_stops;possible_red_flag,True
+2023,13,Circuit Park Zandvoort,2023-08-27,LAW,19,Finished,7,16.5,True,True,True,outlier_stops;possible_red_flag,True
+2023,13,Circuit Park Zandvoort,2023-08-27,BOT,18,Finished,5,16.5,True,True,True,outlier_stops;possible_red_flag,True
+2023,13,Circuit Park Zandvoort,2023-08-27,TSU,17,Finished,5,16.5,True,True,True,outlier_stops;possible_red_flag,True
+2023,13,Circuit Park Zandvoort,2023-08-27,MAG,0,Finished,6,16.5,True,True,True,outlier_stops;possible_red_flag,True
+2023,13,Circuit Park Zandvoort,2023-08-27,RUS,3,Finished,7,16.5,True,True,True,outlier_stops;possible_red_flag,True
+2023,13,Circuit Park Zandvoort,2023-08-27,ZHO,15,Accident,4,16.5,True,False,True,retired;possible_red_flag,True
+2023,13,Circuit Park Zandvoort,2023-08-27,LEC,9,Undertray,2,16.5,True,False,True,retired;possible_red_flag,True
+2023,13,Circuit Park Zandvoort,2023-08-27,SAR,10,Accident,0,16.5,True,False,True,retired;no_pit_data;possible_red_flag,True
+2023,14,Autodromo Nazionale di Monza,2023-09-03,VER,2,Finished,1,27.833333333333332,False,True,False,,True
+2023,14,Autodromo Nazionale di Monza,2023-09-03,PER,5,Finished,1,27.833333333333332,False,True,False,,True
+2023,14,Autodromo Nazionale di Monza,2023-09-03,SAI,1,Finished,1,27.833333333333332,False,True,False,,True
+2023,14,Autodromo Nazionale di Monza,2023-09-03,LEC,3,Finished,1,27.833333333333332,False,True,False,,True
+2023,14,Autodromo Nazionale di Monza,2023-09-03,RUS,4,Finished,1,27.833333333333332,False,True,False,,True
+2023,14,Autodromo Nazionale di Monza,2023-09-03,HAM,8,Finished,1,27.833333333333332,False,True,False,,True
+2023,14,Autodromo Nazionale di Monza,2023-09-03,ALB,6,Finished,1,27.833333333333332,False,True,False,,True
+2023,14,Autodromo Nazionale di Monza,2023-09-03,NOR,9,Finished,1,27.833333333333332,False,True,False,,True
+2023,14,Autodromo Nazionale di Monza,2023-09-03,ALO,10,Finished,1,27.833333333333332,False,True,False,,True
+2023,14,Autodromo Nazionale di Monza,2023-09-03,BOT,14,Finished,1,27.833333333333332,False,True,False,,True
+2023,14,Autodromo Nazionale di Monza,2023-09-03,LAW,12,Finished,2,27.833333333333332,False,True,False,,True
+2023,14,Autodromo Nazionale di Monza,2023-09-03,PIA,7,Finished,2,27.833333333333332,False,True,False,,True
+2023,14,Autodromo Nazionale di Monza,2023-09-03,SAR,15,Finished,1,27.833333333333332,False,True,False,,True
+2023,14,Autodromo Nazionale di Monza,2023-09-03,ZHO,16,Finished,2,27.833333333333332,False,True,False,,True
+2023,14,Autodromo Nazionale di Monza,2023-09-03,GAS,17,Finished,2,27.833333333333332,False,True,False,,True
+2023,14,Autodromo Nazionale di Monza,2023-09-03,STR,20,Finished,1,27.833333333333332,False,True,False,,True
+2023,14,Autodromo Nazionale di Monza,2023-09-03,HUL,13,Lapped,2,27.833333333333332,False,True,False,,True
+2023,14,Autodromo Nazionale di Monza,2023-09-03,MAG,19,Lapped,2,27.833333333333332,False,True,False,,True
+2023,14,Autodromo Nazionale di Monza,2023-09-03,OCO,18,Retired,1,27.833333333333332,False,False,False,retired,True
+2023,14,Autodromo Nazionale di Monza,2023-09-03,TSU,11,Did not start,0,27.833333333333332,False,False,False,retired;no_pit_data,True
+2023,15,Marina Bay Street Circuit,2023-09-17,SAI,1,Finished,1,27.8,True,True,False,,True
+2023,15,Marina Bay Street Circuit,2023-09-17,NOR,4,Finished,1,27.8,True,True,False,,True
+2023,15,Marina Bay Street Circuit,2023-09-17,HAM,5,Finished,2,27.8,True,True,False,,True
+2023,15,Marina Bay Street Circuit,2023-09-17,LEC,3,Finished,1,27.8,True,True,False,,True
+2023,15,Marina Bay Street Circuit,2023-09-17,VER,11,Finished,1,27.8,True,True,False,,True
+2023,15,Marina Bay Street Circuit,2023-09-17,GAS,12,Finished,1,27.8,True,True,False,,True
+2023,15,Marina Bay Street Circuit,2023-09-17,PIA,17,Finished,1,27.8,True,True,False,,True
+2023,15,Marina Bay Street Circuit,2023-09-17,PER,13,Finished,1,27.8,True,True,False,,True
+2023,15,Marina Bay Street Circuit,2023-09-17,LAW,10,Finished,1,27.8,True,True,False,,True
+2023,15,Marina Bay Street Circuit,2023-09-17,MAG,6,Finished,2,27.8,True,True,False,,True
+2023,15,Marina Bay Street Circuit,2023-09-17,ALB,14,Finished,2,27.8,True,True,False,,True
+2023,15,Marina Bay Street Circuit,2023-09-17,ZHO,19,Finished,2,27.8,True,True,False,,True
+2023,15,Marina Bay Street Circuit,2023-09-17,HUL,9,Finished,1,27.8,True,True,False,,True
+2023,15,Marina Bay Street Circuit,2023-09-17,SAR,18,Finished,2,27.8,True,True,False,,True
+2023,15,Marina Bay Street Circuit,2023-09-17,ALO,7,Finished,2,27.8,True,True,False,,True
+2023,15,Marina Bay Street Circuit,2023-09-17,RUS,2,Retired,2,27.8,True,False,False,retired,True
+2023,15,Marina Bay Street Circuit,2023-09-17,BOT,16,Retired,1,27.8,True,False,False,retired,True
+2023,15,Marina Bay Street Circuit,2023-09-17,OCO,8,Retired,1,27.8,True,False,False,retired,True
+2023,15,Marina Bay Street Circuit,2023-09-17,TSU,15,Retired,0,27.8,True,False,False,retired;no_pit_data,True
+2023,15,Marina Bay Street Circuit,2023-09-17,STR,0,Withdrew,0,27.8,True,False,False,retired;no_pit_data,True
+2023,16,Suzuka Circuit,2023-09-24,VER,1,Finished,2,26.266666666666666,False,True,False,,True
+2023,16,Suzuka Circuit,2023-09-24,NOR,3,Finished,2,26.266666666666666,False,True,False,,True
+2023,16,Suzuka Circuit,2023-09-24,PIA,2,Finished,2,26.266666666666666,False,True,False,,True
+2023,16,Suzuka Circuit,2023-09-24,LEC,4,Finished,2,26.266666666666666,False,True,False,,True
+2023,16,Suzuka Circuit,2023-09-24,HAM,7,Finished,2,26.266666666666666,False,True,False,,True
+2023,16,Suzuka Circuit,2023-09-24,SAI,6,Finished,2,26.266666666666666,False,True,False,,True
+2023,16,Suzuka Circuit,2023-09-24,RUS,8,Finished,1,26.266666666666666,False,True,False,,True
+2023,16,Suzuka Circuit,2023-09-24,ALO,10,Finished,2,26.266666666666666,False,True,False,,True
+2023,16,Suzuka Circuit,2023-09-24,OCO,14,Finished,2,26.266666666666666,False,True,False,,True
+2023,16,Suzuka Circuit,2023-09-24,GAS,12,Finished,2,26.266666666666666,False,True,False,,True
+2023,16,Suzuka Circuit,2023-09-24,LAW,11,Lapped,2,26.266666666666666,False,True,False,,True
+2023,16,Suzuka Circuit,2023-09-24,TSU,9,Lapped,2,26.266666666666666,False,True,False,,True
+2023,16,Suzuka Circuit,2023-09-24,ZHO,19,Lapped,3,26.266666666666666,False,True,False,,True
+2023,16,Suzuka Circuit,2023-09-24,HUL,18,Lapped,3,26.266666666666666,False,True,False,,True
+2023,16,Suzuka Circuit,2023-09-24,MAG,15,Lapped,2,26.266666666666666,False,True,False,,True
+2023,16,Suzuka Circuit,2023-09-24,ALB,13,Retired,2,26.266666666666666,False,False,False,retired,True
+2023,16,Suzuka Circuit,2023-09-24,SAR,20,Retired,3,26.266666666666666,False,False,False,retired,True
+2023,16,Suzuka Circuit,2023-09-24,STR,17,Retired,1,26.266666666666666,False,False,False,retired,True
+2023,16,Suzuka Circuit,2023-09-24,PER,5,Retired,4,26.266666666666666,False,False,False,retired,True
+2023,16,Suzuka Circuit,2023-09-24,BOT,16,Retired,2,26.266666666666666,False,False,False,retired,True
+2023,17,Lusail International Circuit,2023-10-08,VER,1,Finished,3,31.46666666666667,False,True,False,,True
+2023,17,Lusail International Circuit,2023-10-08,PIA,6,Finished,3,31.46666666666667,False,True,False,,True
+2023,17,Lusail International Circuit,2023-10-08,NOR,10,Finished,3,31.46666666666667,False,True,False,,True
+2023,17,Lusail International Circuit,2023-10-08,RUS,2,Finished,4,31.46666666666667,False,True,False,,True
+2023,17,Lusail International Circuit,2023-10-08,LEC,5,Finished,3,31.46666666666667,False,True,False,,True
+2023,17,Lusail International Circuit,2023-10-08,ALO,4,Finished,3,31.46666666666667,False,True,False,,True
+2023,17,Lusail International Circuit,2023-10-08,OCO,8,Finished,3,31.46666666666667,False,True,False,,True
+2023,17,Lusail International Circuit,2023-10-08,BOT,9,Finished,3,31.46666666666667,False,True,False,,True
+2023,17,Lusail International Circuit,2023-10-08,ZHO,19,Finished,3,31.46666666666667,False,True,False,,True
+2023,17,Lusail International Circuit,2023-10-08,PER,20,Finished,3,31.46666666666667,False,True,False,,True
+2023,17,Lusail International Circuit,2023-10-08,STR,16,Finished,3,31.46666666666667,False,True,False,,True
+2023,17,Lusail International Circuit,2023-10-08,GAS,7,Finished,3,31.46666666666667,False,True,False,,True
+2023,17,Lusail International Circuit,2023-10-08,ALB,13,Finished,3,31.46666666666667,False,True,False,,True
+2023,17,Lusail International Circuit,2023-10-08,MAG,18,Lapped,3,31.46666666666667,False,True,False,,True
+2023,17,Lusail International Circuit,2023-10-08,TSU,11,Lapped,3,31.46666666666667,False,True,False,,True
+2023,17,Lusail International Circuit,2023-10-08,HUL,14,Lapped,3,31.46666666666667,False,True,False,,True
+2023,17,Lusail International Circuit,2023-10-08,LAW,17,Lapped,3,31.46666666666667,False,True,False,,True
+2023,17,Lusail International Circuit,2023-10-08,SAR,15,Retired,2,31.46666666666667,False,False,False,retired,True
+2023,17,Lusail International Circuit,2023-10-08,HAM,3,Retired,0,31.46666666666667,False,False,False,retired;no_pit_data,True
+2023,17,Lusail International Circuit,2023-10-08,SAI,12,Did not start,0,31.46666666666667,False,False,False,retired;no_pit_data,True
+2023,18,Circuit of the Americas,2023-10-22,VER,6,Finished,2,30.366666666666664,False,True,False,,True
+2023,18,Circuit of the Americas,2023-10-22,NOR,2,Finished,2,30.366666666666664,False,True,False,,True
+2023,18,Circuit of the Americas,2023-10-22,SAI,4,Finished,2,30.366666666666664,False,True,False,,True
+2023,18,Circuit of the Americas,2023-10-22,PER,9,Finished,2,30.366666666666664,False,True,False,,True
+2023,18,Circuit of the Americas,2023-10-22,RUS,5,Finished,2,30.366666666666664,False,True,False,,True
+2023,18,Circuit of the Americas,2023-10-22,GAS,7,Finished,2,30.366666666666664,False,True,False,,True
+2023,18,Circuit of the Americas,2023-10-22,STR,20,Finished,2,30.366666666666664,False,True,False,,True
+2023,18,Circuit of the Americas,2023-10-22,TSU,11,Finished,3,30.366666666666664,False,True,False,,True
+2023,18,Circuit of the Americas,2023-10-22,ALB,15,Finished,2,30.366666666666664,False,True,False,,True
+2023,18,Circuit of the Americas,2023-10-22,SAR,16,Finished,2,30.366666666666664,False,True,False,,True
+2023,18,Circuit of the Americas,2023-10-22,HUL,18,Finished,2,30.366666666666664,False,True,False,,True
+2023,18,Circuit of the Americas,2023-10-22,BOT,13,Finished,2,30.366666666666664,False,True,False,,True
+2023,18,Circuit of the Americas,2023-10-22,ZHO,12,Lapped,2,30.366666666666664,False,True,False,,True
+2023,18,Circuit of the Americas,2023-10-22,MAG,17,Lapped,2,30.366666666666664,False,True,False,,True
+2023,18,Circuit of the Americas,2023-10-22,RIC,14,Lapped,2,30.366666666666664,False,True,False,,True
+2023,18,Circuit of the Americas,2023-10-22,ALO,19,Retired,2,30.366666666666664,False,False,False,retired,True
+2023,18,Circuit of the Americas,2023-10-22,PIA,10,Retired,0,30.366666666666664,False,False,False,retired;no_pit_data,True
+2023,18,Circuit of the Americas,2023-10-22,OCO,8,Retired,0,30.366666666666664,False,False,False,retired;no_pit_data,True
+2023,18,Circuit of the Americas,2023-10-22,HAM,3,Disqualified,2,30.366666666666664,False,False,False,retired,True
+2023,18,Circuit of the Americas,2023-10-22,LEC,1,Disqualified,1,30.366666666666664,False,False,False,retired,True
+2023,19,Autódromo Hermanos Rodríguez,2023-10-29,VER,3,Finished,3,24.933333333333334,False,True,True,possible_red_flag,True
+2023,19,Autódromo Hermanos Rodríguez,2023-10-29,HAM,6,Finished,2,24.933333333333334,False,True,True,possible_red_flag,True
+2023,19,Autódromo Hermanos Rodríguez,2023-10-29,LEC,1,Finished,2,24.933333333333334,False,True,True,possible_red_flag,True
+2023,19,Autódromo Hermanos Rodríguez,2023-10-29,SAI,2,Finished,2,24.933333333333334,False,True,True,possible_red_flag,True
+2023,19,Autódromo Hermanos Rodríguez,2023-10-29,NOR,17,Finished,3,24.933333333333334,False,True,True,possible_red_flag,True
+2023,19,Autódromo Hermanos Rodríguez,2023-10-29,RUS,8,Finished,2,24.933333333333334,False,True,True,possible_red_flag,True
+2023,19,Autódromo Hermanos Rodríguez,2023-10-29,RIC,4,Finished,2,24.933333333333334,False,True,True,possible_red_flag,True
+2023,19,Autódromo Hermanos Rodríguez,2023-10-29,PIA,7,Finished,2,24.933333333333334,False,True,True,possible_red_flag,True
+2023,19,Autódromo Hermanos Rodríguez,2023-10-29,ALB,14,Finished,2,24.933333333333334,False,True,True,possible_red_flag,True
+2023,19,Autódromo Hermanos Rodríguez,2023-10-29,OCO,15,Finished,1,24.933333333333334,False,True,True,possible_red_flag,True
+2023,19,Autódromo Hermanos Rodríguez,2023-10-29,GAS,11,Finished,2,24.933333333333334,False,True,True,possible_red_flag,True
+2023,19,Autódromo Hermanos Rodríguez,2023-10-29,TSU,18,Finished,2,24.933333333333334,False,True,True,possible_red_flag,True
+2023,19,Autódromo Hermanos Rodríguez,2023-10-29,HUL,12,Finished,2,24.933333333333334,False,True,True,possible_red_flag,True
+2023,19,Autódromo Hermanos Rodríguez,2023-10-29,ZHO,10,Finished,2,24.933333333333334,False,True,True,possible_red_flag,True
+2023,19,Autódromo Hermanos Rodríguez,2023-10-29,BOT,9,Finished,2,24.933333333333334,False,True,True,possible_red_flag,True
+2023,19,Autódromo Hermanos Rodríguez,2023-10-29,SAR,19,Retired,2,24.933333333333334,False,False,True,retired;possible_red_flag,True
+2023,19,Autódromo Hermanos Rodríguez,2023-10-29,STR,0,Collision damage,2,24.933333333333334,False,False,True,retired;possible_red_flag,True
+2023,19,Autódromo Hermanos Rodríguez,2023-10-29,ALO,13,Withdrew,2,24.933333333333334,False,False,True,retired;possible_red_flag,True
+2023,19,Autódromo Hermanos Rodríguez,2023-10-29,MAG,16,Accident,1,24.933333333333334,False,False,True,retired;possible_red_flag,True
+2023,19,Autódromo Hermanos Rodríguez,2023-10-29,PER,5,Collision damage,0,24.933333333333334,False,False,True,retired;no_pit_data;possible_red_flag,True
+2023,20,Autódromo José Carlos Pace,2023-11-05,VER,1,Finished,4,19.96666666666667,True,True,True,possible_red_flag,True
+2023,20,Autódromo José Carlos Pace,2023-11-05,NOR,6,Finished,4,19.96666666666667,True,True,True,possible_red_flag,True
+2023,20,Autódromo José Carlos Pace,2023-11-05,ALO,4,Finished,4,19.96666666666667,True,True,True,possible_red_flag,True
+2023,20,Autódromo José Carlos Pace,2023-11-05,PER,9,Finished,4,19.96666666666667,True,True,True,possible_red_flag,True
+2023,20,Autódromo José Carlos Pace,2023-11-05,STR,3,Finished,4,19.96666666666667,True,True,True,possible_red_flag,True
+2023,20,Autódromo José Carlos Pace,2023-11-05,SAI,7,Finished,4,19.96666666666667,True,True,True,possible_red_flag,True
+2023,20,Autódromo José Carlos Pace,2023-11-05,GAS,15,Finished,4,19.96666666666667,True,True,True,possible_red_flag,True
+2023,20,Autódromo José Carlos Pace,2023-11-05,HAM,5,Finished,4,19.96666666666667,True,True,True,possible_red_flag,True
+2023,20,Autódromo José Carlos Pace,2023-11-05,TSU,16,Finished,4,19.96666666666667,True,True,True,possible_red_flag,True
+2023,20,Autódromo José Carlos Pace,2023-11-05,OCO,14,Lapped,5,19.96666666666667,True,True,True,outlier_stops;possible_red_flag,True
+2023,20,Autódromo José Carlos Pace,2023-11-05,SAR,19,Lapped,4,19.96666666666667,True,True,True,possible_red_flag,True
+2023,20,Autódromo José Carlos Pace,2023-11-05,HUL,11,Lapped,4,19.96666666666667,True,True,True,possible_red_flag,True
+2023,20,Autódromo José Carlos Pace,2023-11-05,RIC,17,Lapped,4,19.96666666666667,True,True,True,possible_red_flag,True
+2023,20,Autódromo José Carlos Pace,2023-11-05,PIA,10,Lapped,4,19.96666666666667,True,True,True,possible_red_flag,True
+2023,20,Autódromo José Carlos Pace,2023-11-05,RUS,8,Retired,4,19.96666666666667,True,False,True,retired;possible_red_flag,True
+2023,20,Autódromo José Carlos Pace,2023-11-05,BOT,18,Retired,3,19.96666666666667,True,False,True,retired;possible_red_flag,True
+2023,20,Autódromo José Carlos Pace,2023-11-05,ZHO,20,Retired,3,19.96666666666667,True,False,True,retired;possible_red_flag,True
+2023,20,Autódromo José Carlos Pace,2023-11-05,MAG,12,Retired,0,19.96666666666667,True,False,True,retired;no_pit_data;possible_red_flag,True
+2023,20,Autódromo José Carlos Pace,2023-11-05,ALB,13,Retired,0,19.96666666666667,True,False,True,retired;no_pit_data;possible_red_flag,True
+2023,20,Autódromo José Carlos Pace,2023-11-05,LEC,2,Did not start,0,19.96666666666667,True,False,True,retired;no_pit_data;possible_red_flag,True
+2023,21,Las Vegas Strip Street Circuit,2023-11-19,VER,2,Finished,2,13.133333333333333,False,True,False,,True
+2023,21,Las Vegas Strip Street Circuit,2023-11-19,LEC,1,Finished,1,13.133333333333333,False,True,False,,True
+2023,21,Las Vegas Strip Street Circuit,2023-11-19,PER,11,Finished,2,13.133333333333333,False,True,False,,True
+2023,21,Las Vegas Strip Street Circuit,2023-11-19,OCO,16,Finished,1,13.133333333333333,False,True,False,,True
+2023,21,Las Vegas Strip Street Circuit,2023-11-19,STR,19,Finished,2,13.133333333333333,False,True,False,,True
+2023,21,Las Vegas Strip Street Circuit,2023-11-19,SAI,12,Finished,2,13.133333333333333,False,True,False,,True
+2023,21,Las Vegas Strip Street Circuit,2023-11-19,HAM,10,Finished,2,13.133333333333333,False,True,False,,True
+2023,21,Las Vegas Strip Street Circuit,2023-11-19,RUS,3,Finished,2,13.133333333333333,False,True,False,,True
+2023,21,Las Vegas Strip Street Circuit,2023-11-19,ALO,9,Finished,2,13.133333333333333,False,True,False,,True
+2023,21,Las Vegas Strip Street Circuit,2023-11-19,PIA,18,Finished,2,13.133333333333333,False,True,False,,True
+2023,21,Las Vegas Strip Street Circuit,2023-11-19,GAS,4,Finished,1,13.133333333333333,False,True,False,,True
+2023,21,Las Vegas Strip Street Circuit,2023-11-19,ALB,5,Finished,1,13.133333333333333,False,True,False,,True
+2023,21,Las Vegas Strip Street Circuit,2023-11-19,MAG,8,Finished,2,13.133333333333333,False,True,False,,True
+2023,21,Las Vegas Strip Street Circuit,2023-11-19,RIC,14,Finished,1,13.133333333333333,False,True,False,,True
+2023,21,Las Vegas Strip Street Circuit,2023-11-19,ZHO,17,Finished,1,13.133333333333333,False,True,False,,True
+2023,21,Las Vegas Strip Street Circuit,2023-11-19,SAR,6,Finished,1,13.133333333333333,False,True,False,,True
+2023,21,Las Vegas Strip Street Circuit,2023-11-19,BOT,7,Finished,2,13.133333333333333,False,True,False,,True
+2023,21,Las Vegas Strip Street Circuit,2023-11-19,TSU,20,Retired,2,13.133333333333333,False,False,False,retired,True
+2023,21,Las Vegas Strip Street Circuit,2023-11-19,HUL,13,Retired,2,13.133333333333333,False,False,False,retired,True
+2023,21,Las Vegas Strip Street Circuit,2023-11-19,NOR,15,Retired,0,13.133333333333333,False,False,False,retired;no_pit_data,True
+2023,22,Yas Marina Circuit,2023-11-26,VER,1,Finished,2,26.566666666666666,False,True,False,,True
+2023,22,Yas Marina Circuit,2023-11-26,LEC,2,Finished,2,26.566666666666666,False,True,False,,True
+2023,22,Yas Marina Circuit,2023-11-26,RUS,4,Finished,2,26.566666666666666,False,True,False,,True
+2023,22,Yas Marina Circuit,2023-11-26,PER,9,Finished,2,26.566666666666666,False,True,False,,True
+2023,22,Yas Marina Circuit,2023-11-26,NOR,5,Finished,2,26.566666666666666,False,True,False,,True
+2023,22,Yas Marina Circuit,2023-11-26,PIA,3,Finished,2,26.566666666666666,False,True,False,,True
+2023,22,Yas Marina Circuit,2023-11-26,ALO,7,Finished,2,26.566666666666666,False,True,False,,True
+2023,22,Yas Marina Circuit,2023-11-26,TSU,6,Finished,1,26.566666666666666,False,True,False,,True
+2023,22,Yas Marina Circuit,2023-11-26,HAM,11,Finished,2,26.566666666666666,False,True,False,,True
+2023,22,Yas Marina Circuit,2023-11-26,STR,13,Finished,2,26.566666666666666,False,True,False,,True
+2023,22,Yas Marina Circuit,2023-11-26,RIC,15,Finished,2,26.566666666666666,False,True,False,,True
+2023,22,Yas Marina Circuit,2023-11-26,OCO,12,Finished,1,26.566666666666666,False,True,False,,True
+2023,22,Yas Marina Circuit,2023-11-26,GAS,10,Finished,2,26.566666666666666,False,True,False,,True
+2023,22,Yas Marina Circuit,2023-11-26,ALB,14,Finished,2,26.566666666666666,False,True,False,,True
+2023,22,Yas Marina Circuit,2023-11-26,HUL,8,Finished,2,26.566666666666666,False,True,False,,True
+2023,22,Yas Marina Circuit,2023-11-26,SAR,20,Finished,2,26.566666666666666,False,True,False,,True
+2023,22,Yas Marina Circuit,2023-11-26,ZHO,19,Finished,2,26.566666666666666,False,True,False,,True
+2023,22,Yas Marina Circuit,2023-11-26,SAI,16,Retired,2,26.566666666666666,False,False,False,retired,True
+2023,22,Yas Marina Circuit,2023-11-26,BOT,18,Lapped,1,26.566666666666666,False,True,False,,True
+2023,22,Yas Marina Circuit,2023-11-26,MAG,17,Lapped,2,26.566666666666666,False,True,False,,True

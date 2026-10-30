@@ -1,0 +1,21 @@
+ season  round                       circuit  race_date driver  grid_position finish_status  num_stops  air_temp_mean  rain
+   2023      1 Bahrain International Circuit 2023-03-05    VER              1      Finished          2      26.433333 False
+   2023      1 Bahrain International Circuit 2023-03-05    PER              2      Finished          2      26.433333 False
+   2023      1 Bahrain International Circuit 2023-03-05    ALO              5      Finished          2      26.433333 False
+   2023      1 Bahrain International Circuit 2023-03-05    SAI              4      Finished          2      26.433333 False
+   2023      1 Bahrain International Circuit 2023-03-05    HAM              7      Finished          2      26.433333 False
+   2023      1 Bahrain International Circuit 2023-03-05    STR              8      Finished          2      26.433333 False
+   2023      1 Bahrain International Circuit 2023-03-05    RUS              6      Finished          2      26.433333 False
+   2023      1 Bahrain International Circuit 2023-03-05    BOT             12      Finished          2      26.433333 False
+   2023      1 Bahrain International Circuit 2023-03-05    GAS             20      Finished          3      26.433333 False
+   2023      1 Bahrain International Circuit 2023-03-05    ALB             15      Finished          3      26.433333 False
+   2023      1 Bahrain International Circuit 2023-03-05    TSU             14      Finished          3      26.433333 False
+   2023      1 Bahrain International Circuit 2023-03-05    SAR             16        Lapped          3      26.433333 False
+   2023      1 Bahrain International Circuit 2023-03-05    MAG             17        Lapped          3      26.433333 False
+   2023      1 Bahrain International Circuit 2023-03-05    DEV             19        Lapped          2      26.433333 False
+   2023      1 Bahrain International Circuit 2023-03-05    HUL             10        Lapped          3      26.433333 False
+   2023      1 Bahrain International Circuit 2023-03-05    ZHO             13        Lapped          3      26.433333 False
+   2023      1 Bahrain International Circuit 2023-03-05    NOR             11        Lapped          6      26.433333 False
+   2023      1 Bahrain International Circuit 2023-03-05    OCO              9       Retired          3      26.433333 False
+   2023      1 Bahrain International Circuit 2023-03-05    LEC              3       Retired          2      26.433333 False
+   2023      1 Bahrain International Circuit 2023-03-05    PIA             18       Retired          0      26.433333 False

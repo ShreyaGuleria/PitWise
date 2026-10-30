@@ -1,0 +1,101 @@
+Loading 2023 round 1: Bahrain Grand Prix
+C:\Users\ASUS\Desktop\F1 AAAH\f1-strategy\src\build_dataset.py:97: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`). Please use a specific unit instead.
+  end = start + pd.Timedelta(hours=2)
+Loading 2023 round 2: Saudi Arabian Grand Prix
+C:\Users\ASUS\Desktop\F1 AAAH\f1-strategy\src\build_dataset.py:97: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`). Please use a specific unit instead.
+  end = start + pd.Timedelta(hours=2)
+Loading 2023 round 3: Australian Grand Prix
+C:\Users\ASUS\Desktop\F1 AAAH\f1-strategy\src\build_dataset.py:97: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`). Please use a specific unit instead.
+  end = start + pd.Timedelta(hours=2)
+Loading 2023 round 4: Azerbaijan Grand Prix
+C:\Users\ASUS\Desktop\F1 AAAH\f1-strategy\src\build_dataset.py:97: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`). Please use a specific unit instead.
+  end = start + pd.Timedelta(hours=2)
+Loading 2023 round 5: Miami Grand Prix
+C:\Users\ASUS\Desktop\F1 AAAH\f1-strategy\src\build_dataset.py:97: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`). Please use a specific unit instead.
+  end = start + pd.Timedelta(hours=2)
+Loading 2023 round 6: Monaco Grand Prix
+C:\Users\ASUS\Desktop\F1 AAAH\f1-strategy\src\build_dataset.py:97: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`). Please use a specific unit instead.
+  end = start + pd.Timedelta(hours=2)
+Loading 2023 round 7: Spanish Grand Prix
+C:\Users\ASUS\Desktop\F1 AAAH\f1-strategy\src\build_dataset.py:97: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`). Please use a specific unit instead.
+  end = start + pd.Timedelta(hours=2)
+Loading 2023 round 8: Canadian Grand Prix
+C:\Users\ASUS\Desktop\F1 AAAH\f1-strategy\src\build_dataset.py:97: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`). Please use a specific unit instead.
+  end = start + pd.Timedelta(hours=2)
+Loading 2023 round 9: Austrian Grand Prix
+C:\Users\ASUS\Desktop\F1 AAAH\f1-strategy\src\build_dataset.py:97: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`). Please use a specific unit instead.
+  end = start + pd.Timedelta(hours=2)
+Loading 2023 round 10: British Grand Prix
+C:\Users\ASUS\Desktop\F1 AAAH\f1-strategy\src\build_dataset.py:97: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`). Please use a specific unit instead.
+  end = start + pd.Timedelta(hours=2)
+Loading 2023 round 11: Hungarian Grand Prix
+C:\Users\ASUS\Desktop\F1 AAAH\f1-strategy\src\build_dataset.py:97: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`). Please use a specific unit instead.
+  end = start + pd.Timedelta(hours=2)
+Loading 2023 round 12: Belgian Grand Prix
+C:\Users\ASUS\Desktop\F1 AAAH\f1-strategy\src\build_dataset.py:97: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`). Please use a specific unit instead.
+  end = start + pd.Timedelta(hours=2)
+Loading 2023 round 13: Dutch Grand Prix
+C:\Users\ASUS\Desktop\F1 AAAH\f1-strategy\src\build_dataset.py:97: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`). Please use a specific unit instead.
+  end = start + pd.Timedelta(hours=2)
+Loading 2023 round 14: Italian Grand Prix
+C:\Users\ASUS\Desktop\F1 AAAH\f1-strategy\src\build_dataset.py:97: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`). Please use a specific unit instead.
+  end = start + pd.Timedelta(hours=2)
+Loading 2023 round 15: Singapore Grand Prix
+C:\Users\ASUS\Desktop\F1 AAAH\f1-strategy\src\build_dataset.py:97: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`). Please use a specific unit instead.
+  end = start + pd.Timedelta(hours=2)
+Loading 2023 round 16: Japanese Grand Prix
+C:\Users\ASUS\Desktop\F1 AAAH\f1-strategy\src\build_dataset.py:97: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`). Please use a specific unit instead.
+  end = start + pd.Timedelta(hours=2)
+Loading 2023 round 17: Qatar Grand Prix
+C:\Users\ASUS\Desktop\F1 AAAH\f1-strategy\src\build_dataset.py:97: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`). Please use a specific unit instead.
+  end = start + pd.Timedelta(hours=2)
+Loading 2023 round 18: United States Grand Prix
+C:\Users\ASUS\Desktop\F1 AAAH\f1-strategy\src\build_dataset.py:97: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`). Please use a specific unit instead.
+  end = start + pd.Timedelta(hours=2)
+Loading 2023 round 19: Mexico City Grand Prix
+C:\Users\ASUS\Desktop\F1 AAAH\f1-strategy\src\build_dataset.py:97: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`). Please use a specific unit instead.
+  end = start + pd.Timedelta(hours=2)
+Loading 2023 round 20: S�o Paulo Grand Prix
+C:\Users\ASUS\Desktop\F1 AAAH\f1-strategy\src\build_dataset.py:97: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`). Please use a specific unit instead.
+  end = start + pd.Timedelta(hours=2)
+Loading 2023 round 21: Las Vegas Grand Prix
+C:\Users\ASUS\Desktop\F1 AAAH\f1-strategy\src\build_dataset.py:97: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`). Please use a specific unit instead.
+  end = start + pd.Timedelta(hours=2)
+Loading 2023 round 22: Abu Dhabi Grand Prix
+C:\Users\ASUS\Desktop\F1 AAAH\f1-strategy\src\build_dataset.py:97: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`). Please use a specific unit instead.
+  end = start + pd.Timedelta(hours=2)
+
+Rows: 440
+ season  round                       circuit  race_date driver  grid_position finish_status  num_stops  air_temp_mean  rain  is_finisher  possible_red_flag exclude_reason  data_complete
+   2023      1 Bahrain International Circuit 2023-03-05    VER              1      Finished          2      26.433333 False         True              False                          True
+   2023      1 Bahrain International Circuit 2023-03-05    PER              2      Finished          2      26.433333 False         True              False                          True
+   2023      1 Bahrain International Circuit 2023-03-05    ALO              5      Finished          2      26.433333 False         True              False                          True
+   2023      1 Bahrain International Circuit 2023-03-05    SAI              4      Finished          2      26.433333 False         True              False                          True
+   2023      1 Bahrain International Circuit 2023-03-05    HAM              7      Finished          2      26.433333 False         True              False                          True
+   2023      1 Bahrain International Circuit 2023-03-05    STR              8      Finished          2      26.433333 False         True              False                          True
+   2023      1 Bahrain International Circuit 2023-03-05    RUS              6      Finished          2      26.433333 False         True              False                          True
+   2023      1 Bahrain International Circuit 2023-03-05    BOT             12      Finished          2      26.433333 False         True              False                          True
+   2023      1 Bahrain International Circuit 2023-03-05    GAS             20      Finished          3      26.433333 False         True              False                          True
+   2023      1 Bahrain International Circuit 2023-03-05    ALB             15      Finished          3      26.433333 False         True              False                          True
+
+Rows per season:
+ season
+2023    440
+
+Exclusion reason counts (a row can count more than once):
+ exclude_reason
+possible_red_flag    80
+retired              66
+outlier_stops        23
+no_pit_data          23
+
+Usable rows: 314
+Usable num_stops distribution:
+ num_stops
+1    107
+2    150
+3     52
+4      5
+Incomplete rows: 0
+
+Failed downloads: 0
