@@ -1,0 +1,13 @@
+{
+  "rows": 3458,
+  "races": 173,
+  "unique_driver_keys": true,
+  "all_previous_fields_except_exclude_reason_unchanged": true,
+  "num_stops_and_stops_class_unchanged": true,
+  "weather_fields_exactly_unchanged": true,
+  "utf8_strict_decode": true,
+  "network_requests": 0,
+  "cache_failures": [],
+  "previous_csv_sha256": "cb53dcca2b207e0a8ba7faad0ee959ff6131e88aecb2f8f183d391f1b140b8ec",
+  "updated_csv_sha256": "839e65aaf4402034dcecbcf1c3a7825aaf953029acf92ac075a36d1eb0e60fda"
+}

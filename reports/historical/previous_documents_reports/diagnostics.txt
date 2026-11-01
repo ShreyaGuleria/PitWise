@@ -1,0 +1,107 @@
+OUTLIER ROWS: 2025 and 2019
+ season  round             race_name driver  num_stops finish_status  possible_red_flag red_flag_evidence
+   2019     11     German Grand Prix    GRO          5      Finished              False                {}
+   2019     11     German Grand Prix    HAM          6      Finished              False                {}
+   2019     11     German Grand Prix    KUB          5      Finished              False                {}
+   2019     11     German Grand Prix    MAG          6      Finished              False                {}
+   2019     11     German Grand Prix    RUS          5      Finished              False                {}
+   2019     11     German Grand Prix    STR          5      Finished              False                {}
+   2019     11     German Grand Prix    VER          5      Finished              False                {}
+   2019     11     German Grand Prix    VET          5      Finished              False                {}
+   2025      1 Australian Grand Prix    ALB          5      Finished              False                {}
+   2025      1 Australian Grand Prix    ANT          5      Finished              False                {}
+   2025      1 Australian Grand Prix    BEA          5      Finished              False                {}
+   2025      1 Australian Grand Prix    GAS          5      Finished              False                {}
+   2025      1 Australian Grand Prix    HAM          5      Finished              False                {}
+   2025      1 Australian Grand Prix    HUL          5      Finished              False                {}
+   2025      1 Australian Grand Prix    LEC          5      Finished              False                {}
+   2025      1 Australian Grand Prix    NOR          5      Finished              False                {}
+   2025      1 Australian Grand Prix    OCO          5      Finished              False                {}
+   2025      1 Australian Grand Prix    PIA          5      Finished              False                {}
+   2025      1 Australian Grand Prix    RUS          5      Finished              False                {}
+   2025      1 Australian Grand Prix    STR          5      Finished              False                {}
+   2025      1 Australian Grand Prix    TSU          5      Finished              False                {}
+   2025      1 Australian Grand Prix    VER          5      Finished              False                {}
+   2025     10   Canadian Grand Prix    ALO          6      Finished              False                {}
+   2025     10   Canadian Grand Prix    ANT          5      Finished              False                {}
+   2025     10   Canadian Grand Prix    HAM          5      Finished              False                {}
+   2025     10   Canadian Grand Prix    HUL          5      Finished              False                {}
+   2025     10   Canadian Grand Prix    LEC          5      Finished              False                {}
+   2025     10   Canadian Grand Prix    PIA          5      Finished              False                {}
+   2025     10   Canadian Grand Prix    RUS          5      Finished              False                {}
+   2025     10   Canadian Grand Prix    STR          5        Lapped              False                {}
+   2025     10   Canadian Grand Prix    VER          5      Finished              False                {}
+
+REQUESTED RACE USABLE CLASS COUNTS
+ season  round          race_name  1  2  3+
+   2018      6  Monaco Grand Prix 13  2   2
+   2019      6  Monaco Grand Prix 17  2   0
+   2021      5  Monaco Grand Prix 17  1   0
+   2021     12 Belgian Grand Prix  0  0   0
+   2022      7  Monaco Grand Prix  0  0   0
+   2023      6  Monaco Grand Prix  6  9   2
+   2023     17   Qatar Grand Prix  0  0  17
+   2024      8  Monaco Grand Prix  0  0   0
+   2025      8  Monaco Grand Prix  0 16   2
+
+USABLE ROW SUMMARY PER SEASON (shares in percent)
+ season  usable_rows  usable_races  mean_num_stops  share_1_pct  share_2_pct  share_3+_pct
+   2018          338            21            1.41        64.79        29.59          5.62
+   2019          353            21            1.50        56.94        37.11          5.95
+   2020          237            14            1.67        44.30        44.73         10.97
+   2021          278            16            1.73        47.48        37.41         15.11
+   2022          334            20            1.93        34.43        42.81         22.75
+   2023          316            18            1.85        34.18        47.78         18.04
+   2024          378            21            1.76        40.48        46.30         13.23
+   2025          402            23            1.60        51.24        39.80          8.96
+
+USABLE ROW SUMMARY PER CIRCUIT (shares in percent)
+                             circuit  usable_rows  usable_races  mean_num_stops  share_1_pct  share_2_pct  share_3+_pct
+                      Hockenheimring           20             2            2.55        20.00        25.00         55.00
+        Lusail International Circuit           66             4            2.48        13.64        34.85         51.52
+          Autódromo José Carlos Pace           82             5            2.32        18.29        46.34         35.37
+       Bahrain International Circuit          138             8            2.22         5.07        68.84         26.09
+  Autódromo Internacional do Algarve           38             2            2.18        39.47        10.53         50.00
+      Circuit de Barcelona-Catalunya          145             8            2.14        12.41        62.76         24.83
+              Circuit Park Zandvoort           71             4            2.10        38.03        30.99         30.99
+                         Nürburgring           15             1            1.93         6.67        93.33          0.00
+                       Red Bull Ring          170            10            1.82        41.18        38.82         20.00
+           Circuit Gilles Villeneuve           93             6            1.80        44.09        41.94         13.98
+                 Silverstone Circuit          117             7            1.77        35.90        53.85         10.26
+                         Hungaroring          128             7            1.74        35.16        55.47          9.38
+        Circuit de Spa-Francorchamps          123             7            1.68        39.02        53.66          7.32
+      Shanghai International Circuit           72             4            1.65        44.44        47.22          8.33
+             Circuit of the Americas          121             7            1.63        41.32        54.55          4.13
+                      Suzuka Circuit           89             5            1.62        48.31        42.70          8.99
+      Las Vegas Strip Street Circuit           52             3            1.60        44.23        51.92          3.85
+       Autodromo Enzo e Dino Ferrari           70             4            1.56        51.43        41.43          7.14
+                   Circuit de Monaco           89             5            1.47        59.55        33.71          6.74
+                       Istanbul Park           35             2            1.46        60.00        34.29          5.71
+                      Sochi Autodrom           69             4            1.45        57.97        39.13          2.90
+                  Yas Marina Circuit          138             8            1.43        60.14        37.68          2.17
+      Albert Park Grand Prix Circuit           65             4            1.42        63.08        32.31          4.62
+                   Baku City Circuit           97             6            1.41        65.98        28.87          5.15
+        Autódromo Hermanos Rodríguez          103             6            1.35        68.93        28.16          2.91
+        Autodromo Nazionale di Monza          120             7            1.33        69.17        28.33          2.50
+           Marina Bay Street Circuit          103             6            1.30        75.73        19.42          4.85
+       Miami International Autodrome           70             4            1.17        84.29        14.29          1.43
+                 Circuit Paul Ricard           70             4            1.16        84.29        15.71          0.00
+             Jeddah Corniche Circuit           67             4            1.10        91.04         7.46          1.49
+Autodromo Internazionale del Mugello            0             0             NaN          NaN          NaN           NaN
+
+RACES WITH PRECIPITATION TOTAL >=1 MM
+ season  round                 race_name  precipitation_mm_total  usable_rows
+   2018      5        Spanish Grand Prix                    1.40           14
+   2019     18        Mexican Grand Prix                    3.00           18
+   2021     12        Belgian Grand Prix                    1.20            0
+   2022      4 Emilia Romagna Grand Prix                    1.10           18
+   2022     13      Hungarian Grand Prix                    1.70           19
+   2022     15          Dutch Grand Prix                    1.50           17
+   2022     18       Japanese Grand Prix                    5.60           18
+   2024      9       Canadian Grand Prix                    2.60           15
+   2024     10        Spanish Grand Prix                    1.00           20
+   2024     21      São Paulo Grand Prix                    5.70            0
+   2025      1     Australian Grand Prix                    2.10            0
+   2025     12        British Grand Prix                    2.70           15
+
+METHOD: Usable means empty exclude_reason and data_complete=True. Shares and means are driver-row weighted. Usable race counts are unique season/round pairs with at least one usable driver. No dataset or build code was changed. Source SHA-256: cb53dcca2b207e0a8ba7faad0ee959ff6131e88aecb2f8f183d391f1b140b8ec

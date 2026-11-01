@@ -1,0 +1,27 @@
+Loading 2023 round 1: Bahrain Grand Prix
+Loading 2023 round 2: Saudi Arabian Grand Prix
+Loading 2023 round 3: Australian Grand Prix
+Loading 2023 round 4: Azerbaijan Grand Prix
+Loading 2023 round 5: Miami Grand Prix
+Loading 2023 round 6: Monaco Grand Prix
+Loading 2023 round 7: Spanish Grand Prix
+Loading 2023 round 8: Canadian Grand Prix
+Loading 2023 round 9: Austrian Grand Prix
+Loading 2023 round 10: British Grand Prix
+Loading 2023 round 11: Hungarian Grand Prix
+Loading 2023 round 12: Belgian Grand Prix
+Loading 2023 round 13: Dutch Grand Prix
+Loading 2023 round 14: Italian Grand Prix
+Loading 2023 round 15: Singapore Grand Prix
+Loading 2023 round 16: Japanese Grand Prix
+Loading 2023 round 17: Qatar Grand Prix
+Loading 2023 round 18: United States Grand Prix
+Loading 2023 round 19: Mexico City Grand Prix
+Loading 2023 round 20: São Paulo Grand Prix
+Loading 2023 round 21: Las Vegas Grand Prix
+Loading 2023 round 22: Abu Dhabi Grand Prix
+Completed season 2023: 440 rows; 0 failures
+               race_name driver  num_stops exclude_reason stops_class
+United States Grand Prix    HAM          2                          2
+United States Grand Prix    LEC          1                          1
+2023 OFFLINE CHECK PASSED

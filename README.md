@@ -59,10 +59,10 @@ when ready to download 2018 through 2025. Existing cached JSON is reused.
 The Desktop copy is the current working project.
 
 All result rows are retained. `is_finisher` accepts Finished, +... and Lapped.
-Exclusion reasons are semicolon-separated, so a row can have multiple reasons:
-retired, no_pit_data (zero records), outlier_stops (>=5), possible_red_flag.
-Zero records do not prove missing coverage: an early retirement or a genuine
-zero-stop drive also gets no_pit_data. Failed pit downloads produce unknown stop
+Each row has one exclusion reason, first match wins: dns (Did not start),
+dnf (any other non-finisher, except Disqualified), red_flag_race,
+zero_stop_finisher, outlier_stops (>=5), or empty for usable. Zero stops are not separately excluded.
+stops_class is 1, 2, or 3+; zero or missing counts have a blank class. Failed pit downloads produce unknown stop
 counts rather than fabricated zeros. Weather failures retain rows with missing
 weather. `data_complete` identifies incomplete downloads; usable summaries require
 both an empty exclusion reason and complete data.
@@ -76,4 +76,17 @@ and can flag other prolonged pit events. All race rows share the signal.
 A failed results request cannot yield driver rows; it is explicitly reported in
 `data/processed/failed_races.json`. Reruns reuse good cached responses and retry
 failed requests. The console prints samples, season coverage, reason counts, usable
-stop distributions, and failures. Reason counts overlap when multiple flags apply.
+stop distributions, and failures. Reason counts are mutually exclusive.
+
+Run with `--cache-only` to prohibit downloads. The current 2023 CSV was rebuilt
+from cache only, encoded explicitly as UTF-8, and includes race_name.
+See diagnostics_2023.txt for status counts, red-flag evidence, and rainy races.
+Scheduled lap counts are absent from the cached responses; winner laps are
+reported without inventing a scheduled distance.
+
+Disqualified is treated as a finisher. Precipitation totals and maxima are
+computed from the same inclusive UTC hourly race window as rain and temperature.
+The sum includes hourly accumulation samples, not an exact continuous two-hour
+measurement when the race starts between hours. Weather is reanalysis.
+The full 2018–2025 run saves per-season checkpoints and final diagnostic CSVs
+under data/processed. The full console report is in run_all_seasons.log.

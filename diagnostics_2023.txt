@@ -1,0 +1,52 @@
+FINISH STATUSES
+   finish_status  is_finisher  count                           treatment
+        Accident        False      3                                 dnf
+Collision damage        False      2                                 dnf
+   Did not start        False      3                                 dns
+    Disqualified        False      2                                 dnf
+        Finished         True    304 finisher; check red flag then stops
+          Lapped         True     70 finisher; check red flag then stops
+         Retired        False     53                                 dnf
+       Undertray        False      1                                 dnf
+        Withdrew        False      2                                 dnf
+
+RED FLAG EVIDENCE
+Round 3: Australian Grand Prix; scheduled laps: unavailable in cache; winner laps: 58
+Rule triggered: lap 8, 18 distinct drivers with pit duration >=600 seconds: hamilton (15:25.181), max_verstappen (15:25.112), alonso (15:26.940), stroll (15:27.222), gasly (15:26.996), hulkenberg (15:26.326), russell (15:30.824), tsunoda (15:31.820), norris (15:34.763), piastri (15:34.541), sainz (15:37.024), de_vries (15:37.874), ocon (15:37.929), perez (15:37.512), zhou (15:37.849), bottas (15:37.594), sargeant (15:38.017), kevin_magnussen (15:40.228)
+Rule triggered: lap 55, 13 distinct drivers with pit duration >=600 seconds: max_verstappen (14:27.756), hamilton (14:31.670), alonso (14:34.306), sainz (14:34.924), gasly (14:35.210), stroll (14:35.053), perez (14:36.462), norris (14:41.064), hulkenberg (14:40.712), ocon (14:39.804), piastri (14:24.653), zhou (14:01.565), tsunoda (14:01.820)
+Rule triggered: lap 54, 3 distinct drivers with pit duration >=600 seconds: bottas (12:19.342), sargeant (12:12.022), de_vries (12:06.783)
+Rule triggered: lap 57, 12 distinct drivers with pit duration >=600 seconds: max_verstappen (30:56.502), hamilton (30:59.435), sainz (31:01.554), hulkenberg (31:09.055), tsunoda (31:11.209), norris (31:04.087), piastri (31:06.226), zhou (31:04.998), bottas (31:07.182), perez (30:53.568), alonso (30:45.073), stroll (30:45.925)
+Round 13: Dutch Grand Prix; scheduled laps: unavailable in cache; winner laps: 72
+Rule triggered: lap 63, 12 distinct drivers with pit duration >=600 seconds: perez (41:01.612), norris (40:43.212), russell (40:46.251), albon (40:43.475), piastri (40:34.653), ocon (40:32.201), tsunoda (40:14.895), stroll (40:10.734), hulkenberg (40:10.704), bottas (40:05.113), lawson (39:56.340), kevin_magnussen (39:54.733)
+Rule triggered: lap 64, 5 distinct drivers with pit duration >=600 seconds: max_verstappen (41:23.382), alonso (40:55.302), gasly (40:43.169), sainz (40:43.147), hamilton (40:31.108)
+Round 19: Mexico City Grand Prix; scheduled laps: unavailable in cache; winner laps: 71
+Rule triggered: lap 34, 18 distinct drivers with pit duration >=600 seconds: max_verstappen (20:09.136), leclerc (20:10.512), hamilton (20:12.908), sainz (20:15.432), ricciardo (20:17.136), piastri (20:19.064), russell (20:18.200), tsunoda (20:18.057), hulkenberg (20:19.826), norris (20:26.386), gasly (20:25.698), albon (20:27.980), zhou (20:29.539), ocon (20:26.296), sargeant (20:27.718), bottas (20:29.349), stroll (20:29.686), alonso (20:29.837)
+Round 20: São Paulo Grand Prix; scheduled laps: unavailable in cache; winner laps: 71
+Rule triggered: lap 2, 15 distinct drivers with pit duration >=600 seconds: max_verstappen (23:22.632), norris (23:24.611), hamilton (23:26.375), alonso (23:28.154), stroll (23:29.984), russell (23:30.984), perez (23:31.712), sainz (23:33.704), ocon (23:34.725), tsunoda (23:35.420), gasly (23:36.706), bottas (23:38.156), zhou (23:39.945), sargeant (23:41.207), hulkenberg (23:41.069)
+
+RAIN TRUE RACES
+ round            race_name  air_temp_mean
+     5     Miami Grand Prix      26.600000
+     6    Monaco Grand Prix      24.066667
+     7   Spanish Grand Prix      22.466667
+    12   Belgian Grand Prix      17.600000
+    13     Dutch Grand Prix      16.500000
+    15 Singapore Grand Prix      27.800000
+    20 São Paulo Grand Prix      19.966667
+
+EXCLUSION SUMMARY
+exclude_reason
+usable           314
+dnf               63
+red_flag_race     58
+dns                3
+outlier_stops      2
+
+USABLE STOPS CLASSES
+stops_class
+1     107
+2     150
+3+     57
+
+CSV: C:\Users\ASUS\Desktop\F1 AAAH\f1-strategy\data\processed\stops_dataset.csv; rows: 440; UTF-8 verified; São Paulo Grand Prix present correctly.
+stops_class is blank for zero stops (23 excluded rows); no invented positive class.

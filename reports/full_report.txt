@@ -1,0 +1,456 @@
+Loading 2018 round 1: Australian Grand Prix
+Loading 2018 round 2: Bahrain Grand Prix
+Loading 2018 round 3: Chinese Grand Prix
+Loading 2018 round 4: Azerbaijan Grand Prix
+Loading 2018 round 5: Spanish Grand Prix
+Loading 2018 round 6: Monaco Grand Prix
+Loading 2018 round 7: Canadian Grand Prix
+Loading 2018 round 8: French Grand Prix
+Loading 2018 round 9: Austrian Grand Prix
+Loading 2018 round 10: British Grand Prix
+Loading 2018 round 11: German Grand Prix
+Loading 2018 round 12: Hungarian Grand Prix
+Loading 2018 round 13: Belgian Grand Prix
+Loading 2018 round 14: Italian Grand Prix
+Loading 2018 round 15: Singapore Grand Prix
+Loading 2018 round 16: Russian Grand Prix
+Loading 2018 round 17: Japanese Grand Prix
+Loading 2018 round 18: United States Grand Prix
+Loading 2018 round 19: Mexican Grand Prix
+Loading 2018 round 20: Brazilian Grand Prix
+Loading 2018 round 21: Abu Dhabi Grand Prix
+Completed season 2018: 420 rows; 0 failures
+Loading 2019 round 1: Australian Grand Prix
+Loading 2019 round 2: Bahrain Grand Prix
+Loading 2019 round 3: Chinese Grand Prix
+Loading 2019 round 4: Azerbaijan Grand Prix
+Loading 2019 round 5: Spanish Grand Prix
+Loading 2019 round 6: Monaco Grand Prix
+Loading 2019 round 7: Canadian Grand Prix
+Loading 2019 round 8: French Grand Prix
+Loading 2019 round 9: Austrian Grand Prix
+Loading 2019 round 10: British Grand Prix
+Loading 2019 round 11: German Grand Prix
+Loading 2019 round 12: Hungarian Grand Prix
+Loading 2019 round 13: Belgian Grand Prix
+Loading 2019 round 14: Italian Grand Prix
+Loading 2019 round 15: Singapore Grand Prix
+Loading 2019 round 16: Russian Grand Prix
+Loading 2019 round 17: Japanese Grand Prix
+Loading 2019 round 18: Mexican Grand Prix
+Loading 2019 round 19: United States Grand Prix
+Loading 2019 round 20: Brazilian Grand Prix
+Loading 2019 round 21: Abu Dhabi Grand Prix
+Completed season 2019: 420 rows; 0 failures
+Loading 2020 round 1: Austrian Grand Prix
+Loading 2020 round 2: Styrian Grand Prix
+Loading 2020 round 3: Hungarian Grand Prix
+Loading 2020 round 4: British Grand Prix
+Loading 2020 round 5: 70th Anniversary Grand Prix
+Loading 2020 round 6: Spanish Grand Prix
+Loading 2020 round 7: Belgian Grand Prix
+Loading 2020 round 8: Italian Grand Prix
+Loading 2020 round 9: Tuscan Grand Prix
+Loading 2020 round 10: Russian Grand Prix
+Loading 2020 round 11: Eifel Grand Prix
+Loading 2020 round 12: Portuguese Grand Prix
+Loading 2020 round 13: Emilia Romagna Grand Prix
+Loading 2020 round 14: Turkish Grand Prix
+Loading 2020 round 15: Bahrain Grand Prix
+Loading 2020 round 16: Sakhir Grand Prix
+Loading 2020 round 17: Abu Dhabi Grand Prix
+Completed season 2020: 340 rows; 0 failures
+Loading 2021 round 1: Bahrain Grand Prix
+Loading 2021 round 2: Emilia Romagna Grand Prix
+Loading 2021 round 3: Portuguese Grand Prix
+Loading 2021 round 4: Spanish Grand Prix
+Loading 2021 round 5: Monaco Grand Prix
+Loading 2021 round 6: Azerbaijan Grand Prix
+Loading 2021 round 7: French Grand Prix
+Loading 2021 round 8: Styrian Grand Prix
+Loading 2021 round 9: Austrian Grand Prix
+Loading 2021 round 10: British Grand Prix
+Loading 2021 round 11: Hungarian Grand Prix
+Loading 2021 round 12: Belgian Grand Prix
+Loading 2021 round 13: Dutch Grand Prix
+Loading 2021 round 14: Italian Grand Prix
+Loading 2021 round 15: Russian Grand Prix
+Loading 2021 round 16: Turkish Grand Prix
+Loading 2021 round 17: United States Grand Prix
+Loading 2021 round 18: Mexico City Grand Prix
+Loading 2021 round 19: São Paulo Grand Prix
+Loading 2021 round 20: Qatar Grand Prix
+Loading 2021 round 21: Saudi Arabian Grand Prix
+Loading 2021 round 22: Abu Dhabi Grand Prix
+Completed season 2021: 440 rows; 0 failures
+Loading 2022 round 1: Bahrain Grand Prix
+Loading 2022 round 2: Saudi Arabian Grand Prix
+Loading 2022 round 3: Australian Grand Prix
+Loading 2022 round 4: Emilia Romagna Grand Prix
+Loading 2022 round 5: Miami Grand Prix
+Loading 2022 round 6: Spanish Grand Prix
+Loading 2022 round 7: Monaco Grand Prix
+Loading 2022 round 8: Azerbaijan Grand Prix
+Loading 2022 round 9: Canadian Grand Prix
+Loading 2022 round 10: British Grand Prix
+Loading 2022 round 11: Austrian Grand Prix
+Loading 2022 round 12: French Grand Prix
+Loading 2022 round 13: Hungarian Grand Prix
+Loading 2022 round 14: Belgian Grand Prix
+Loading 2022 round 15: Dutch Grand Prix
+Loading 2022 round 16: Italian Grand Prix
+Loading 2022 round 17: Singapore Grand Prix
+Loading 2022 round 18: Japanese Grand Prix
+Loading 2022 round 19: United States Grand Prix
+Loading 2022 round 20: Mexico City Grand Prix
+Loading 2022 round 21: São Paulo Grand Prix
+Loading 2022 round 22: Abu Dhabi Grand Prix
+Completed season 2022: 440 rows; 0 failures
+Loading 2023 round 1: Bahrain Grand Prix
+Loading 2023 round 2: Saudi Arabian Grand Prix
+Loading 2023 round 3: Australian Grand Prix
+Loading 2023 round 4: Azerbaijan Grand Prix
+Loading 2023 round 5: Miami Grand Prix
+Loading 2023 round 6: Monaco Grand Prix
+Loading 2023 round 7: Spanish Grand Prix
+Loading 2023 round 8: Canadian Grand Prix
+Loading 2023 round 9: Austrian Grand Prix
+Loading 2023 round 10: British Grand Prix
+Loading 2023 round 11: Hungarian Grand Prix
+Loading 2023 round 12: Belgian Grand Prix
+Loading 2023 round 13: Dutch Grand Prix
+Loading 2023 round 14: Italian Grand Prix
+Loading 2023 round 15: Singapore Grand Prix
+Loading 2023 round 16: Japanese Grand Prix
+Loading 2023 round 17: Qatar Grand Prix
+Loading 2023 round 18: United States Grand Prix
+Loading 2023 round 19: Mexico City Grand Prix
+Loading 2023 round 20: São Paulo Grand Prix
+Loading 2023 round 21: Las Vegas Grand Prix
+Loading 2023 round 22: Abu Dhabi Grand Prix
+Completed season 2023: 440 rows; 0 failures
+Loading 2024 round 1: Bahrain Grand Prix
+Loading 2024 round 2: Saudi Arabian Grand Prix
+Loading 2024 round 3: Australian Grand Prix
+Loading 2024 round 4: Japanese Grand Prix
+Loading 2024 round 5: Chinese Grand Prix
+Loading 2024 round 6: Miami Grand Prix
+Loading 2024 round 7: Emilia Romagna Grand Prix
+Loading 2024 round 8: Monaco Grand Prix
+Loading 2024 round 9: Canadian Grand Prix
+Loading 2024 round 10: Spanish Grand Prix
+Loading 2024 round 11: Austrian Grand Prix
+Loading 2024 round 12: British Grand Prix
+Loading 2024 round 13: Hungarian Grand Prix
+Loading 2024 round 14: Belgian Grand Prix
+Loading 2024 round 15: Dutch Grand Prix
+Loading 2024 round 16: Italian Grand Prix
+Loading 2024 round 17: Azerbaijan Grand Prix
+Loading 2024 round 18: Singapore Grand Prix
+Loading 2024 round 19: United States Grand Prix
+Loading 2024 round 20: Mexico City Grand Prix
+Loading 2024 round 21: São Paulo Grand Prix
+Loading 2024 round 22: Las Vegas Grand Prix
+Loading 2024 round 23: Qatar Grand Prix
+Loading 2024 round 24: Abu Dhabi Grand Prix
+Completed season 2024: 479 rows; 0 failures
+Loading 2025 round 1: Australian Grand Prix
+Loading 2025 round 2: Chinese Grand Prix
+Loading 2025 round 3: Japanese Grand Prix
+Loading 2025 round 4: Bahrain Grand Prix
+Loading 2025 round 5: Saudi Arabian Grand Prix
+Loading 2025 round 6: Miami Grand Prix
+Loading 2025 round 7: Emilia Romagna Grand Prix
+Loading 2025 round 8: Monaco Grand Prix
+Loading 2025 round 9: Spanish Grand Prix
+Loading 2025 round 10: Canadian Grand Prix
+Loading 2025 round 11: Austrian Grand Prix
+Loading 2025 round 12: British Grand Prix
+Loading 2025 round 13: Belgian Grand Prix
+Loading 2025 round 14: Hungarian Grand Prix
+Loading 2025 round 15: Dutch Grand Prix
+Loading 2025 round 16: Italian Grand Prix
+Loading 2025 round 17: Azerbaijan Grand Prix
+Loading 2025 round 18: Singapore Grand Prix
+Loading 2025 round 19: United States Grand Prix
+Loading 2025 round 20: Mexico City Grand Prix
+Loading 2025 round 21: São Paulo Grand Prix
+Loading 2025 round 22: Las Vegas Grand Prix
+Loading 2025 round 23: Qatar Grand Prix
+Loading 2025 round 24: Abu Dhabi Grand Prix
+Completed season 2025: 479 rows; 0 failures
+
+Total rows: 3458
+
+Rows per season:
+ season
+2018    420
+2019    420
+2020    340
+2021    440
+2022    440
+2023    440
+2024    479
+2025    479
+
+Exclusions per season:
+ exclude_reason  chaotic_race  dnf  dns  outlier_stops  red_flag_race  rule_forced_stops  suspect_stop_data  usable  zero_stop_finisher
+season                                                                                                                                
+2018                       0   82    0              0              0                  0                  0     338                   0
+2019                      13   58    0              0              0                  0                  0     348                   1
+2020                       0   57    0              1             45                  0                  0     237                   0
+2021                      18   58    0              0             79                  0                 19     245                  21
+2022                       0   74    0              0             31                  0                 18     317                   0
+2023                       0   61    3              2             58                 17                  0     299                   0
+2024                       0   49    3              0             49                  0                 15     363                   0
+2025                      31   51    3              0              0                 34                  0     360                   0
+
+Possible red flag races (lap: distinct drivers with >=600s pit duration):
+  season  round                 race_name                      red_flag_evidence
+   2020      8        Italian Grand Prix                             {"26": 17}
+   2020      9         Tuscan Grand Prix                    {"45": 10, "8": 12}
+   2020     15        Bahrain Grand Prix                              {"1": 19}
+   2021      2 Emilia Romagna Grand Prix                     {"32": 9, "33": 6}
+   2021      6     Azerbaijan Grand Prix                             {"48": 16}
+   2021     10        British Grand Prix                              {"2": 19}
+   2021     11      Hungarian Grand Prix                              {"2": 15}
+   2021     21  Saudi Arabian Grand Prix                   {"13": 19, "15": 16}
+   2022      7         Monaco Grand Prix                    {"29": 5, "30": 13}
+   2022     10        British Grand Prix                              {"1": 17}
+   2023      3     Australian Grand Prix {"54": 3, "55": 13, "57": 12, "8": 18}
+   2023     13          Dutch Grand Prix                    {"63": 12, "64": 5}
+   2023     19    Mexico City Grand Prix                             {"34": 18}
+   2023     20      São Paulo Grand Prix                              {"2": 15}
+   2024      4       Japanese Grand Prix                              {"1": 18}
+   2024      8         Monaco Grand Prix                              {"1": 16}
+   2024     21      São Paulo Grand Prix                             {"32": 15}
+
+All suspect_stop_data races (including higher-priority exclusions):
+  season  round                 race_name  consecutive_lap_drivers
+   2020      9         Tuscan Grand Prix                       13
+   2021      2 Emilia Romagna Grand Prix                       11
+   2021      3     Portuguese Grand Prix                       19
+   2021      6     Azerbaijan Grand Prix                       16
+   2021     11      Hungarian Grand Prix                       14
+   2021     19      São Paulo Grand Prix                       20
+   2022     15          Dutch Grand Prix                       11
+   2023      3     Australian Grand Prix                       10
+   2023     13          Dutch Grand Prix                       13
+   2023     20      São Paulo Grand Prix                       17
+   2024     23          Qatar Grand Prix                       17
+   2025      1     Australian Grand Prix                       17
+   2025     10       Canadian Grand Prix                       17
+
+Usable rows with consecutive-lap records: 16; races involved: 14
+
+Usable classes per race:
+  season  round                   race_name  1  2  3+
+   2018      1       Australian Grand Prix 12  3   0
+   2018      2          Bahrain Grand Prix  4 12   1
+   2018      3          Chinese Grand Prix 10  9   0
+   2018      4       Azerbaijan Grand Prix  0 10   3
+   2018      5          Spanish Grand Prix 10  3   1
+   2018      6           Monaco Grand Prix 13  2   2
+   2018      7         Canadian Grand Prix 15  2   0
+   2018      8           French Grand Prix 13  2   0
+   2018      9         Austrian Grand Prix 11  3   0
+   2018     10          British Grand Prix  7  7   0
+   2018     11           German Grand Prix  4  5   6
+   2018     12        Hungarian Grand Prix 15  2   0
+   2018     13          Belgian Grand Prix  0 13   2
+   2018     14          Italian Grand Prix 14  3   0
+   2018     15        Singapore Grand Prix 15  2   2
+   2018     16          Russian Grand Prix 17  1   0
+   2018     17         Japanese Grand Prix 15  2   0
+   2018     18    United States Grand Prix 11  4   1
+   2018     19          Mexican Grand Prix  7  8   1
+   2018     20        Brazilian Grand Prix 12  6   0
+   2018     21        Abu Dhabi Grand Prix 14  1   0
+   2019      1       Australian Grand Prix 15  1   1
+   2019      2          Bahrain Grand Prix  0 15   1
+   2019      3          Chinese Grand Prix  5 11   1
+   2019      4       Azerbaijan Grand Prix 10  5   1
+   2019      5          Spanish Grand Prix  1 17   0
+   2019      6           Monaco Grand Prix 17  2   0
+   2019      7         Canadian Grand Prix 15  3   0
+   2019      8           French Grand Prix 16  3   0
+   2019      9         Austrian Grand Prix 18  1   1
+   2019     10          British Grand Prix  8  8   1
+   2019     11           German Grand Prix  0  0   0
+   2019     12        Hungarian Grand Prix 15  4   0
+   2019     13          Belgian Grand Prix 12  3   1
+   2019     14          Italian Grand Prix 10  6   1
+   2019     15        Singapore Grand Prix 10  6   1
+   2019     16          Russian Grand Prix 10  5   0
+   2019     17         Japanese Grand Prix  8 10   1
+   2019     18          Mexican Grand Prix 12  6   0
+   2019     19    United States Grand Prix  5 10   1
+   2019     20        Brazilian Grand Prix  1 10   5
+   2019     21        Abu Dhabi Grand Prix 13  5   0
+   2020      1         Austrian Grand Prix  0  5   6
+   2020      2          Styrian Grand Prix 14  3   0
+   2020      3        Hungarian Grand Prix  2 11   5
+   2020      4          British Grand Prix 12  5   0
+   2020      5 70th Anniversary Grand Prix  3 12   4
+   2020      6          Spanish Grand Prix  5 13   1
+   2020      7          Belgian Grand Prix 14  3   0
+   2020      8          Italian Grand Prix  0  0   0
+   2020      9           Tuscan Grand Prix  0  0   0
+   2020     10          Russian Grand Prix 13  4   1
+   2020     11            Eifel Grand Prix  1 14   0
+   2020     12       Portuguese Grand Prix 15  4   0
+   2020     13   Emilia Romagna Grand Prix  5  9   1
+   2020     14          Turkish Grand Prix  3 11   2
+   2020     15          Bahrain Grand Prix  0  0   0
+   2020     16           Sakhir Grand Prix  2 10   5
+   2020     17        Abu Dhabi Grand Prix 16  2   1
+   2021      1          Bahrain Grand Prix  1 13   2
+   2021      2   Emilia Romagna Grand Prix  0  0   0
+   2021      3       Portuguese Grand Prix  0  0   0
+   2021      4          Spanish Grand Prix  2 16   1
+   2021      5           Monaco Grand Prix 17  1   0
+   2021      6       Azerbaijan Grand Prix  0  0   0
+   2021      7           French Grand Prix 18  2   0
+   2021      8          Styrian Grand Prix 14  4   0
+   2021      9         Austrian Grand Prix 11  7   0
+   2021     10          British Grand Prix  0  0   0
+   2021     11        Hungarian Grand Prix  0  0   0
+   2021     12          Belgian Grand Prix  0  0   0
+   2021     13            Dutch Grand Prix 10  6   1
+   2021     14          Italian Grand Prix 13  2   0
+   2021     15          Russian Grand Prix  0 17   1
+   2021     16          Turkish Grand Prix 18  1   0
+   2021     17    United States Grand Prix  0 16   1
+   2021     18      Mexico City Grand Prix 13  4   1
+   2021     19        São Paulo Grand Prix  0  0   0
+   2021     20            Qatar Grand Prix  9  8   1
+   2021     21    Saudi Arabian Grand Prix  0  0   0
+   2021     22        Abu Dhabi Grand Prix  6  7   1
+   2022      1          Bahrain Grand Prix  0  1  16
+   2022      2    Saudi Arabian Grand Prix 12  1   0
+   2022      3       Australian Grand Prix 14  2   1
+   2022      4   Emilia Romagna Grand Prix 13  3   2
+   2022      5            Miami Grand Prix 11  4   0
+   2022      6          Spanish Grand Prix  0  4  14
+   2022      7           Monaco Grand Prix  0  0   0
+   2022      8       Azerbaijan Grand Prix  7  8   0
+   2022      9         Canadian Grand Prix  4 13   0
+   2022     10          British Grand Prix  0  0   0
+   2022     11         Austrian Grand Prix  0 14   3
+   2022     12           French Grand Prix 12  4   0
+   2022     13        Hungarian Grand Prix  2 12   5
+   2022     14          Belgian Grand Prix  0 16   2
+   2022     15            Dutch Grand Prix  0  0   0
+   2022     16          Italian Grand Prix  7  8   1
+   2022     17        Singapore Grand Prix 10  3   1
+   2022     18         Japanese Grand Prix  0 13   5
+   2022     19    United States Grand Prix  1 15   1
+   2022     20      Mexico City Grand Prix 15  3   0
+   2022     21        São Paulo Grand Prix  0  9   8
+   2022     22        Abu Dhabi Grand Prix  7 10   0
+   2023      1          Bahrain Grand Prix  0  9   7
+   2023      2    Saudi Arabian Grand Prix 15  2   1
+   2023      3       Australian Grand Prix  0  0   0
+   2023      4       Azerbaijan Grand Prix 15  2   1
+   2023      5            Miami Grand Prix 20  0   0
+   2023      6           Monaco Grand Prix  6  9   2
+   2023      7          Spanish Grand Prix  0 17   3
+   2023      8         Canadian Grand Prix  4 14   0
+   2023      9         Austrian Grand Prix  0  0  19
+   2023     10          British Grand Prix 12  4   1
+   2023     11        Hungarian Grand Prix  0 17   0
+   2023     12          Belgian Grand Prix  3 12   3
+   2023     13            Dutch Grand Prix  0  0   0
+   2023     14          Italian Grand Prix 12  6   0
+   2023     15        Singapore Grand Prix  9  6   0
+   2023     16         Japanese Grand Prix  1 12   2
+   2023     17            Qatar Grand Prix  0  0   0
+   2023     18    United States Grand Prix  1 15   1
+   2023     19      Mexico City Grand Prix  0  0   0
+   2023     20        São Paulo Grand Prix  0  0   0
+   2023     21        Las Vegas Grand Prix  7 10   0
+   2023     22        Abu Dhabi Grand Prix  3 16   0
+   2024      1          Bahrain Grand Prix  0 17   3
+   2024      2    Saudi Arabian Grand Prix 17  1   0
+   2024      3       Australian Grand Prix  0 15   1
+   2024      4         Japanese Grand Prix  0  0   0
+   2024      5          Chinese Grand Prix  3 10   4
+   2024      6            Miami Grand Prix 12  6   1
+   2024      7   Emilia Romagna Grand Prix 16  2   1
+   2024      8           Monaco Grand Prix  0  0   0
+   2024      9         Canadian Grand Prix  3  7   5
+   2024     10          Spanish Grand Prix  0 18   2
+   2024     11         Austrian Grand Prix  0 16   4
+   2024     12          British Grand Prix  0 13   5
+   2024     13        Hungarian Grand Prix  1 16   2
+   2024     14          Belgian Grand Prix  5 13   1
+   2024     15            Dutch Grand Prix 14  6   0
+   2024     16          Italian Grand Prix  9  9   1
+   2024     17       Azerbaijan Grand Prix 15  1   0
+   2024     18        Singapore Grand Prix 17  0   1
+   2024     19    United States Grand Prix 15  4   0
+   2024     20      Mexico City Grand Prix 14  2   1
+   2024     21        São Paulo Grand Prix  0  0   0
+   2024     22        Las Vegas Grand Prix  1 15   2
+   2024     23            Qatar Grand Prix  0  0   0
+   2024     24        Abu Dhabi Grand Prix 11  4   1
+   2025      1       Australian Grand Prix  0  0   0
+   2025      2          Chinese Grand Prix 14  4   1
+   2025      3         Japanese Grand Prix 19  1   0
+   2025      4          Bahrain Grand Prix  0 18   1
+   2025      5    Saudi Arabian Grand Prix 17  1   0
+   2025      6            Miami Grand Prix 16  0   0
+   2025      7   Emilia Romagna Grand Prix  2 15   1
+   2025      8           Monaco Grand Prix  0  0   0
+   2025      9          Spanish Grand Prix  0  3  14
+   2025     10         Canadian Grand Prix  0  0   0
+   2025     11         Austrian Grand Prix  2 13   1
+   2025     12          British Grand Prix  0 14   1
+   2025     13          Belgian Grand Prix 14  6   0
+   2025     14        Hungarian Grand Prix 10  9   0
+   2025     15            Dutch Grand Prix  3 10   4
+   2025     16          Italian Grand Prix 18  0   0
+   2025     17       Azerbaijan Grand Prix 17  2   0
+   2025     18        Singapore Grand Prix 17  3   0
+   2025     19    United States Grand Prix 17  2   0
+   2025     20      Mexico City Grand Prix 10  6   0
+   2025     21        São Paulo Grand Prix  2 13   2
+   2025     22        Las Vegas Grand Prix 15  2   0
+   2025     23            Qatar Grand Prix  0  0   0
+   2025     24        Abu Dhabi Grand Prix 13  7   0
+
+RACES with precipitation total >=1 mm per season:
+ season
+2018    1
+2019    1
+2020    0
+2021    1
+2022    4
+2023    0
+2024    3
+2025    2
+
+Overall usable stops_class:
+ stops_class
+1     1239
+2     1039
+3+     229
+
+Usable stops_class per season:
+ stops_class    1    2  3+
+season                   
+2018         219  100  19
+2019         201  131  16
+2020         105  106  26
+2021         132  104   9
+2022         115  143  59
+2023         108  151  40
+2024         153  175  35
+2025         206  129  25
+
+Races with fewer than 18 driver rows:
+ Series([], )
+
+Incomplete rows: 0
+
+Failed downloads: 0
