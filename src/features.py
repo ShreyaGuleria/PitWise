@@ -9,13 +9,26 @@
 FEATURE_COLUMNS = [
     'circuit_id', 'latitude', 'longitude', 'altitude_m', 'month', 'day_of_year',
     'is_street_circuit', 'constructor_group', 'scheduled_laps', 'is_2022_plus',
-    'grid_position', 'air_temp_mean', 'precipitation_mm_total',
+    'air_temp_mean', 'precipitation_mm_total',
+    # Pre-race encodings: flag grid zero as pit-lane start, map it to 20;
+    # preserve the original grid_position for auditing.
+    'pit_lane_start', 'grid_position_clean',
     # F: median cached pit duration (<60s) from strictly earlier usable circuit races;
     # NaN when no history exists. Pit-lane duration is a proxy, not net time lost.
-    'circuit_pit_loss_prior',
+    'circuit_pit_duration_prior',
+    # Strictly earlier usable-race histories, recomputed before every race.
+    'circuit_avg_stops_prior', 'circuit_races_prior',
+    'circuit_avg_stops_last3', 'recent_avg_stops_prior',
 ]
 
+STRICT_FEATURE_COLUMNS = [column for column in FEATURE_COLUMNS if column not in
+                          ('scheduled_laps', 'air_temp_mean', 'precipitation_mm_total')] + [
+    'circuit_laps_last_year', 'circuit_month_air_temp_prior',
+]
+ALL_FEATURE_COLUMNS = list(dict.fromkeys(FEATURE_COLUMNS + STRICT_FEATURE_COLUMNS))
+
 NOT_FOR_MODEL = [
+    'grid_position',       # Raw reference only; use grid_position_clean and pit_lane_start.
     'num_stops',           # Observed target count; directly reveals the label.
     'stops_class',         # Target label to predict, never an input.
     'finish_status',       # Outcome determined after the race starts.

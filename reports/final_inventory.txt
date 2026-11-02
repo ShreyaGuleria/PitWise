@@ -1,0 +1,79 @@
+Project tree (runtime/cache contents omitted):
+f1-strategy/
+|-- .git/ [contents omitted]
+|-- .tmp/ [contents omitted]
+|-- .venv/ [contents omitted]
+|-- cache/ [contents omitted]
+|-- data/
+|   `-- processed/
+|       |-- failed_races.json
+|       |-- features.csv
+|       |-- splits.csv
+|       `-- stops_dataset.csv
+|-- reports/
+|   |-- historical/
+|   |   |-- previous_documents_reports/
+|   |   |   |-- .matplotlib/
+|   |   |   |   `-- fontlist-v3.11.0.json
+|   |   |   |-- circuit_summary.csv
+|   |   |   |-- diagnostics.txt
+|   |   |   |-- mean_stops_by_circuit.png
+|   |   |   |-- outlier_rows.csv
+|   |   |   |-- season_summary.csv
+|   |   |   |-- selected_races.csv
+|   |   |   |-- stops_class_share_by_season.png
+|   |   |   `-- wet_races.csv
+|   |   |-- previous_project_reports/
+|   |   |   |-- exclusions_by_season.csv
+|   |   |   |-- full_report.txt
+|   |   |   |-- red_flag_races.csv
+|   |   |   |-- usable_classes_by_race.csv
+|   |   |   `-- wet_races_by_season.csv
+|   |   |-- diagnostics_2023.txt
+|   |   |-- offline_2023_check.txt
+|   |   |-- race_table.txt
+|   |   |-- README.md
+|   |   |-- run_2023.log
+|   |   |-- run_all_seasons.log
+|   |   |-- summary_2023.txt
+|   |   `-- verification_2023.log
+|   |-- baselines_validation.txt
+|   |-- constructor_mapping.csv
+|   |-- exclusions_by_season.csv
+|   |-- expanding_validation.csv
+|   |-- expanding_validation.txt
+|   |-- expanding_validation_summary.csv
+|   |-- feature_circuits.csv
+|   |-- feature_null_counts.csv
+|   |-- features_report.txt
+|   |-- final_inventory.txt
+|   |-- full_report.txt
+|   |-- README.md
+|   |-- red_flag_races.csv
+|   |-- suspect_stop_data_races.csv
+|   |-- usable_classes_by_race.csv
+|   |-- usable_classes_by_season.csv
+|   |-- verification.json
+|   `-- wet_races_by_season.csv
+|-- src/
+|   |-- __pycache__/ [contents omitted]
+|   |-- build_dataset.py
+|   |-- build_features.py
+|   |-- evaluate.py
+|   |-- features.py
+|   |-- history.py
+|   |-- test_build_dataset.py
+|   |-- test_evaluate.py
+|   |-- test_features.py
+|   |-- test_history.py
+|   `-- train.py
+|-- .gitignore
+|-- DATA_DICTIONARY.md
+|-- README.md
+`-- requirements.txt
+
+Processed file sizes (bytes):
+failed_races.json: 2
+features.csv: 1,040,526
+splits.csv: 48,060
+stops_dataset.csv: 526,533

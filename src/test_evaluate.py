@@ -10,8 +10,8 @@ from features import FEATURE_COLUMNS, NOT_FOR_MODEL
 def test_splits_and_features():
     rows = assign_splits(load_features())
     assert rows.is_usable.all() and rows.stops_class.isin(CLASSES).all()
-    assert pd.api.types.is_numeric_dtype(rows.circuit_pit_loss_prior)
-    assert rows.circuit_pit_loss_prior.isna().any()
+    assert pd.api.types.is_numeric_dtype(rows.circuit_pit_duration_prior)
+    assert rows.circuit_pit_duration_prior.isna().any()
     assert rows.groupby(['season', 'round']).split.nunique().eq(1).all()
     for split, years in SPLIT_YEARS.items():
         assert set(rows.loc[rows.split.eq(split), 'season']) == set(years)

@@ -66,10 +66,8 @@ By split:
 train: min=0, max=20, zeros=28
 validation: min=0, max=20, zeros=1
 test: min=1, max=20, zeros=0
-Zero likely denotes a pit-lane start or an unassigned grid slot, not pole position.
-The project README documents preserving supplied zero grid values for pit-lane starts.
-Suggest verifying the source, then representing pit-lane starts explicitly with an indicator
-and a missing/appropriate grid value; avoid treating 0 as better than pole. No recoding applied.
+Grid zero denotes a pit-lane start. Use grid_position_clean (0 -> 20) and pit_lane_start.
+Raw grid_position is preserved for reference and excluded from model inputs.
 
 Interpretation:
 Best accuracy: B1 (0.6088).

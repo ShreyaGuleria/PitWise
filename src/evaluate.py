@@ -5,7 +5,7 @@ from pathlib import Path
 
 import pandas as pd
 
-from features import FEATURE_COLUMNS, NOT_FOR_MODEL
+from features import FEATURE_COLUMNS, ALL_FEATURE_COLUMNS, NOT_FOR_MODEL
 
 ROOT = Path(__file__).resolve().parents[1]
 CLASSES = ('1', '2', '3+')
@@ -15,7 +15,7 @@ SPLIT_YEARS = {'train': range(2018, 2024), 'validation': (2024,), 'test': (2025,
 def load_features(path=ROOT / 'data' / 'processed' / 'features.csv'):
     """Keep usable, labelled rows only, preserving identifiers and feature data."""
     rows = pd.read_csv(path, keep_default_na=False, dtype={'stops_class': str},
-                       na_values={'circuit_pit_loss_prior': ['']})
+                       na_values={column: [''] for column in ALL_FEATURE_COLUMNS})
     rows = rows.loc[rows.is_usable.eq(True) & rows.stops_class.isin(CLASSES)].copy()
     rows['race_date'] = pd.to_datetime(rows.race_date, errors='raise')
     return rows.reset_index(drop=True)
@@ -141,10 +141,8 @@ def validation_report(rows, results):
         grid = rows.loc[rows.split.eq(split), 'grid_position']
         line(f'{split}: min={grid.min()}, max={grid.max()}, zeros={grid.eq(0).sum()}')
     if rows.grid_position.eq(0).any():
-        line('Zero likely denotes a pit-lane start or an unassigned grid slot, not pole position.')
-        line('The project README documents preserving supplied zero grid values for pit-lane starts.')
-        line('Suggest verifying the source, then representing pit-lane starts explicitly with an indicator')
-        line('and a missing/appropriate grid value; avoid treating 0 as better than pole. No recoding applied.')
+        line('Grid zero denotes a pit-lane start. Use grid_position_clean (0 -> 20) and pit_lane_start.')
+        line('Raw grid_position is preserved for reference and excluded from model inputs.')
     line('\nInterpretation:')
     for metric in ('accuracy', 'balanced_accuracy', 'macro_f1'):
         best = max(result[metric] for result in results.values())

@@ -1,2 +1,5 @@
 fastf1==3.9.0
 pandas==2.3.3
+scikit-learn==1.9.1
+matplotlib==3.11.2
+joblib==1.6.0

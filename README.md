@@ -1,92 +1,191 @@
-# f1-strategy
+# PitWise
 
-One race only: the 2023 Bahrain Grand Prix. All drivers in the session results
-are retained, including retirements.
+PitWise aims to be a what-if advisor predicting **1, 2 or 3+ pit stops** per
+F1 driver from circuit, date, grid, team and conditions. The current project
+provides a historical classification dataset and validation baselines, not
+proof of which strategy optimises race results or a causal strategy simulator.
 
-Run from this folder in PowerShell:
+## Data and sources
+
+`data/processed/features.csv` contains 3,458 driver-race rows across 173 races
+in 2018–2025. Join on `season`, `round`, `driver`. Jolpica's Ergast-compatible
+results and pit-stop records supply circuit, driver, constructor, grid, outcome
+and stop information. Open-Meteo supplies historical air temperature,
+precipitation and model elevation. Other fields are derived.
+
+`stops_dataset.csv` is the processed source; `features.csv` is the enriched
+model table. All original rows are retained. Train/evaluate only rows with
+`is_usable == True` and `stops_class` in `1`, `2`, `3+`: 2,507 rows.
+Select inputs explicitly from `src/features.py`, never all numeric CSV fields.
+See [DATA_DICTIONARY.md](DATA_DICTIONARY.md) for every column and
+[reports/README.md](reports/README.md) for the proposed extra fields' availability.
+
+`pit_lane_start` is true for original grid zero; `grid_position_clean` maps
+zero to 20 and leaves other positions unchanged. Original `grid_position` is
+preserved. Grid zero denotes a pit-lane start. Only the cleaned grid and pit-lane flag
+are inputs; raw grid_position is reference metadata and is not allowlisted.
+
+`circuit_pit_duration_prior` is median cached pit duration below 60 seconds from
+strictly earlier usable races at the same circuit. A usable race has at least
+one usable driver; all its drivers' stops contribute once per race. Same-date
+and future races cannot contribute. This is pit-lane duration, not net time
+lost. No history means NaN (640 rows). Fit any imputation on training only.
+
+## Exclusion priority
+
+First match wins; flags remain available even when a higher-priority rule wins.
+Blank `exclude_reason` means usable.
+
+| Priority | Rule | Reason |
+|---|---|---|
+| 1 | dns | Did not start, so no completed race strategy to model. |
+| 2 | dnf | Final status does not satisfy the project's finisher rule. |
+| 3 | rule_forced_stops | A listed mandatory stop/tyre-limit rule constrains ordinary strategy. |
+| 4 | red_flag_race | Three or more drivers have 600+ second stops on a common lap, suggesting a stoppage. |
+| 5 | chaotic_race | Three or more drivers have five or more stops, an atypical strategy context. |
+| 6 | suspect_stop_data | Eight or more drivers have consecutive-lap stop records, suggesting questionable data. |
+| 7 | zero_stop_finisher | Zero-stop finishers are outside the 1/2/3+ target definition. |
+| 8 | outlier_stops | Individual count is five or more stops, outside the retained strategy range. |
+| 9 | usable | None of the exclusions applies; retain for labelled modelling. |
+
+The finisher rule accepts Finished, statuses starting with `+`, Lapped and
+Disqualified. These are existing dataset choices, not universal definitions.
+The 217 blank classes are zero-stop rows. Selection depends on outcomes, so
+reported performance describes this filtered population, not every starter.
+
+## Fixed season split
+
+| Split | Seasons | Usable labelled rows |
+|---|---|---:|
+| Train | 2018–2023 | 1,784 |
+| Validation | 2024 | 363 |
+| Test | 2025 | 360 |
+
+Never randomly split driver rows: all drivers in a race must stay together.
+Assignments are saved in `data/processed/splits.csv`. **2025 remains untouched
+for performance evaluation until the explicitly authorised final run.** Only
+counts and data checks have been inspected; no 2025 performance metrics have
+been computed. `evaluate_split` locks test evaluation by default. Tune using
+validation only, and fit preprocessing on training only.
+
+## Validation baselines (2024)
+
+| Baseline | Accuracy | Balanced accuracy | Macro F1 |
+|---|---:|---:|---:|
+| B0: fixed training majority (1 stop) | 0.4215 | 0.3333 | 0.1977 |
+| B1: all earlier usable circuit history | 0.6088 | 0.4560 | 0.4242 |
+| B2: last three earlier usable circuit races | 0.5730 | 0.4807 | 0.4728 |
+
+B1 pools driver class counts at the circuit; unseen circuits fall back to B0.
+B2 pools the last three races; with fewer than three, fallback is B1, then B0.
+Ties favour 1, then 2, then 3+. History includes strictly earlier race dates
+only and can update from earlier completed validation races. No validation
+rows have circuits unseen in usable training. B1 leads accuracy; B2 leads
+balanced accuracy/macro F1 and recalls 20% of 3+ cases (B0/B1 recall none).
+Models should beat these benchmarks, not merely exploit class imbalance.
+Full metrics are in `reports/baselines_validation.txt`.
+
+## Known limitations
+
+- `scheduled_laps` is actual maximum completed distance, not planned distance.
+  Weather inputs are race-window reanalysis, not pre-start forecasts. These
+  retained retrospective proxies must be excluded or replaced before claiming
+  a strict pre-race model; the dictionary records their actual availability.
+- Rain is weak: a few hourly precipitation samples at circuit coordinates
+  cannot reliably capture showers, wet track conditions or changing grip.
+- Only 173 races provide independent contexts. Driver rows share conditions,
+  some circuits have little history and 3+ stops are relatively rare.
+- The 2022 regulation/tyre era shift changes strategy. `is_2022_plus` is a
+  coarse indicator; older circuit history may not transfer to recent years.
+- Pit records count visits, not guaranteed tyre changes. Red flags, suspect
+  records, outcome filtering and the grid-zero convention limit interpretation.
+- This cached route lacks tyre compounds/life, track temperature, degradation,
+  accurate lap series and SC/VSC timelines. Do not invent those fields.
+
+## Rebuild and test offline
+
+Use the existing environment; these commands install and download nothing.
+Rebuilding requires the local cache. A fresh clone can use saved CSVs directly;
+ignored cache files may not be present in the clone.
 
 ```powershell
-python -m venv .venv
-.\.venv\Scripts\python.exe -m pip install -r requirements.txt
-.\.venv\Scripts\python.exe src/build_dataset.py
+.venv/Scripts/python.exe src/build_dataset.py --all-seasons --cache-only
+.venv/Scripts/python.exe src/build_features.py --cache-only
+.venv/Scripts/python.exe src/evaluate.py
+
+.venv/Scripts/python.exe src/test_build_dataset.py
+.venv/Scripts/python.exe src/test_features.py
+.venv/Scripts/python.exe src/test_evaluate.py
+.venv/Scripts/python.exe src/test_history.py
 ```
 
-FastF1 downloads are stored in this project's `./cache`, regardless of the
-working directory used to launch the script. The first run needs internet access.
+The dataset builder refreshes source/exclusion reports; the feature builder
+refreshes `features.csv` and feature diagnostics. `evaluate.py` writes splits
+and evaluates **2024 only**. Cache misses fail without downloading when
+`--cache-only` is supplied. Tests cover original-field preservation, grid
+encodings, cached reconstruction, historical cutoffs and split/leakage guards.
+Historical diagnostics and logs belong under `reports/historical/` and do not
+define the current dataset. Local `.venv`, `cache`, `__pycache__` and `.tmp`
+folders are ignored.
 
-FastF1 3.9.0 supports Formula 1's October 2026 authentication requirement for
-archived timing data. Before the first download, sign in locally with an eligible
-F1TV account if prompted:
+## Expanding-window first model
 
-```powershell
-.\.venv\Scripts\python.exe -m fastf1 auth f1tv --authenticate
-```
+Run `.venv/Scripts/python.exe src/train.py` for four folds: validate on 2021,
+2022, 2023 and 2024, each time training on 2018 through the previous season.
+It excludes 2025 before any fitting, prediction or metric calculation.
+Each race remains wholly in one fold. Earlier completed validation races may
+update history, matching B1/B2's online information policy. Fitted model weights
+and preprocessing stay fixed within each validation season.
 
-Enter your credentials only in your local terminal. FastF1 manages the login
-token; no credentials belong in this project's source files. See the
-[FastF1 3.9.0 release notes](https://github.com/theOehrly/Fast-F1/releases/tag/v3.9.0).
+Four new INPUT histories use strictly earlier usable races, excluding every
+same-date and future race:
 
-Run the small offline check with:
+- `circuit_avg_stops_prior`: pooled usable-driver mean stops at that circuit.
+- `circuit_races_prior`: count of distinct earlier usable races there (zero at cold start).
+- `circuit_avg_stops_last3`: pooled usable-driver mean over the last three usable circuit races, or all available if fewer.
+- `recent_avg_stops_prior`: pooled usable-driver mean over the last three usable races globally, or all available if fewer.
 
-```powershell
-.\.venv\Scripts\python.exe src/test_build_dataset.py
-```
+Means remain NaN without history. Windows count races, not driver rows, and
+race stop means are weighted by usable-driver counts. The renamed
+`circuit_pit_duration_prior` replaces `circuit_pit_loss_prior`; the old column
+has been removed. Its numeric definition is unchanged.
 
-`num_stops` is the number of distinct non-missing `Stint` values in each driver's
-lap data minus one. No usable stints means an unknown count (`<NA>`), not -1 or
-an assumed zero. This assumes each observed stint transition represents a stop;
-missing laps, stops without a recorded following stint, or red-flag tyre changes
-can make this differ from a count of physical pit-lane visits.
+The first model is a fixed random forest (200 trees, depth 8, minimum leaf 5,
+balanced class weights, seed 42), without hyperparameter search. Each fold fits
+median imputation, missingness indicators and one-hot encoding on training
+only. Unseen categories are ignored. Requirements now record scikit-learn,
+matplotlib and joblib; these were installed into the existing .venv.
 
-Weather temperatures are unweighted means of all available race-session weather
-samples (including any pre/post-race samples supplied by FastF1), in Celsius.
-Missing temperatures are ignored by pandas; entirely missing temperatures stay
-unknown. `rain` is true if any non-missing `Rainfall` observation is true, false
-if observations exist and none are true, and unknown if there are no observations.
-The same session weather values appear for every driver, including retirees.
+Both variants use the same model and history features. The retrospective
+variant retains the documented current-race proxies. The strict pre-race
+variant replaces actual distance with `circuit_laps_last_year` (latest usable
+visit in exactly the preceding season), replaces current air temperature with
+`circuit_month_air_temp_prior` (equal-race mean over earlier usable circuit
+races in the same calendar month), and drops current precipitation entirely.
+These replacements are historical estimates, not known current planned laps
+or forecasts. Missing histories are imputed using that fold's training only.
+`STRICT_FEATURE_COLUMNS` lists this variant; `ALL_FEATURE_COLUMNS` describes
+the union of both feature schemas.
 
-`circuit` uses the event name, as requested. `race_date` uses the race session's
-scheduled UTC date. Finish statuses are kept exactly as supplied by FastF1;
-grid positions retain FastF1's values (including 0 if supplied for a pit-lane start).
+Reports: `reports/expanding_validation.txt`, `expanding_validation.csv` and
+`expanding_validation_summary.csv` include B0/B1/B2, both models, per-season
+metrics, per-class results, confusion matrices and mean/sample standard
+deviation/min/max across four seasons. Spread describes between-season
+variation, not a confidence interval. Driver rows are correlated within races;
+small differences should not be interpreted as reliable improvements.
 
-Field reference: [FastF1 getting started documentation](https://github.com/theOehrly/Fast-F1/blob/main/docs/getting_started/basics.rst).
+Initial four-fold results (unweighted seasonal mean +/- sample standard deviation):
 
-## Season dataset
+| Method | Accuracy | Balanced accuracy | Macro F1 |
+|---|---:|---:|---:|
+| B0 | 0.4211 +/- 0.0833 | 0.3333 +/- 0.0000 | 0.1964 +/- 0.0265 |
+| B1 | 0.5247 +/- 0.0840 | 0.3974 +/- 0.0405 | 0.3574 +/- 0.0515 |
+| B2 | 0.5224 +/- 0.0715 | 0.4086 +/- 0.0519 | 0.3744 +/- 0.0725 |
+| RF retrospective | 0.4889 +/- 0.0867 | 0.4039 +/- 0.0410 | 0.3868 +/- 0.0655 |
+| RF strict | 0.4589 +/- 0.0675 | 0.3860 +/- 0.0201 | 0.3734 +/- 0.0361 |
 
-The default command now runs **2023 only** and saves `data/processed/stops_dataset.csv`.
-Run `python src/build_dataset.py --all-seasons` with the project interpreter only
-when ready to download 2018 through 2025. Existing cached JSON is reused.
-The Desktop copy is the current working project.
-
-All result rows are retained. `is_finisher` accepts Finished, +... and Lapped.
-Each row has one exclusion reason, first match wins: dns (Did not start),
-dnf (any other non-finisher, except Disqualified), red_flag_race,
-zero_stop_finisher, outlier_stops (>=5), or empty for usable. Zero stops are not separately excluded.
-stops_class is 1, 2, or 3+; zero or missing counts have a blank class. Failed pit downloads produce unknown stop
-counts rather than fabricated zeros. Weather failures retain rows with missing
-weather. `data_complete` identifies incomplete downloads; usable summaries require
-both an empty exclusion reason and complete data.
-
-The possible-red-flag heuristic requires at least three distinct drivers with
-pit durations of at least ten minutes on the same lap. Jolpica's result/schedule
-responses lack scheduled lap counts and a red-flag indicator, so this is a limited
-signal, not a verified stoppage list. It can miss red flags without such pit records
-and can flag other prolonged pit events. All race rows share the signal.
-
-A failed results request cannot yield driver rows; it is explicitly reported in
-`data/processed/failed_races.json`. Reruns reuse good cached responses and retry
-failed requests. The console prints samples, season coverage, reason counts, usable
-stop distributions, and failures. Reason counts are mutually exclusive.
-
-Run with `--cache-only` to prohibit downloads. The current 2023 CSV was rebuilt
-from cache only, encoded explicitly as UTF-8, and includes race_name.
-See diagnostics_2023.txt for status counts, red-flag evidence, and rainy races.
-Scheduled lap counts are absent from the cached responses; winner laps are
-reported without inventing a scheduled distance.
-
-Disqualified is treated as a finisher. Precipitation totals and maxima are
-computed from the same inclusive UTC hourly race window as rain and temperature.
-The sum includes hourly accumulation samples, not an exact continuous two-hour
-measurement when the race starts between hours. Weather is reanalysis.
-The full 2018–2025 run saves per-season checkpoints and final diagnostic CSVs
-under data/processed. The full console report is in run_all_seasons.log.
+No clear model win: the retrospective model's small mean macro-F1 advantage
+comes with unavailable current-race information and large seasonal variation.
+B1/B2 retain higher mean accuracy. The strict model is a pre-race starting
+point, not a demonstrated improvement. Fold race counts are 14, 19, 17 and 20
+for 2021 through 2024; they are not independent driver-level sample sizes.

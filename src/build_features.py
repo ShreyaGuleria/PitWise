@@ -7,7 +7,8 @@ import io
 import pandas as pd
 
 import build_dataset as dataset
-from features import FEATURE_COLUMNS, NOT_FOR_MODEL
+from features import FEATURE_COLUMNS, ALL_FEATURE_COLUMNS, NOT_FOR_MODEL
+from history import history_features
 
 KEYS = ['season', 'round', 'driver']
 # Requested hand-coded street circuits: Monaco, Baku, Singapore, Jeddah,
@@ -22,7 +23,7 @@ CONSTRUCTOR_GROUPS = {
 }
 
 
-def circuit_pit_loss_prior(table):
+def circuit_pit_duration_prior(table):
     """Median seconds per stop, pooled over strictly earlier usable circuit races.
 
     A usable race has at least one usable driver. Include all cached stops in
@@ -52,7 +53,7 @@ def circuit_pit_loss_prior(table):
     history = pd.DataFrame(durations, columns=['circuit_id', 'race_date', 'duration'])
     history['race_date'] = pd.to_datetime(history.race_date, errors='raise')
     dates = pd.to_datetime(table.race_date, errors='raise')
-    prior = pd.Series(float('nan'), index=table.index, name='circuit_pit_loss_prior')
+    prior = pd.Series(float('nan'), index=table.index, name='circuit_pit_duration_prior')
     for (circuit, date), rows in table.groupby(['circuit_id', dates]):
         earlier = history.loc[history.circuit_id.eq(circuit) & history.race_date.lt(date)]
         prior.loc[rows.index] = earlier.duration.median()
@@ -105,9 +106,12 @@ def build_features(source):
     table['constructor_group'] = table['constructor'].map(CONSTRUCTOR_GROUPS).fillna(table['constructor'])
     table['is_2022_plus'] = table['season'].ge(2022)
     table['is_usable'] = table['exclude_reason'].eq('')
-    table['circuit_pit_loss_prior'] = circuit_pit_loss_prior(table)
+    table['pit_lane_start'] = table.grid_position.eq(0)
+    table['grid_position_clean'] = table.grid_position.replace(0, 20)
+    table['circuit_pit_duration_prior'] = circuit_pit_duration_prior(table)
+    table = table.join(history_features(table))
     pd.testing.assert_frame_equal(table[source.columns], source.reset_index(drop=True), check_exact=True)
-    if set(table.columns) != set(FEATURE_COLUMNS) | set(NOT_FOR_MODEL):
+    if set(table.columns) != set(ALL_FEATURE_COLUMNS) | set(NOT_FOR_MODEL):
         raise ValueError('Every column must be explicitly classified in features.py')
     return table
 
@@ -157,7 +161,7 @@ def main():
     table.to_csv(candidate, index=False, encoding='utf-8')
     candidate.read_bytes().decode('utf-8', errors='strict')
     saved = pd.read_csv(candidate, keep_default_na=False, float_precision='round_trip',
-                        na_values={'circuit_pit_loss_prior': ['']})
+                        na_values={column: [''] for column in ALL_FEATURE_COLUMNS})
     pd.testing.assert_frame_equal(saved[source.columns], source, check_exact=True)
     pd.testing.assert_frame_equal(saved, table, check_exact=True, check_dtype=False)
     candidate.replace(output / 'features.csv')

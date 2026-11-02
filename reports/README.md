@@ -40,7 +40,7 @@ Capture its console output as reports/full_report.txt when regenerating that log
 with circuit, calendar, constructor, lap-count, era and usability fields.
 All 31 circuit elevations were present in cached weather; no requests or
 imputations were needed. The original 13 model inputs have no missing
-values. The additional `circuit_pit_loss_prior` deliberately has missing values
+values. The additional `circuit_pit_duration_prior` deliberately has missing values
 where no eligible earlier history exists. The 217 blank classes are zero-stop rows; the 2,507 blank exclusion
 reasons are usable rows, not missing exclusion information.
 
@@ -73,7 +73,13 @@ cached elevations, and one fallback elevation lookup per circuit.
 
 ## Historical pit-duration feature (2026-11-02)
 
-`circuit_pit_loss_prior` is an **F** input in `src/features.py` and the model
+The feature table also includes `pit_lane_start` (original grid equals zero)
+and `grid_position_clean` (zero maps to 20). Original `grid_position` remains
+unchanged. Both encodings are allowlisted; grid zero is treated as a pit-lane
+start by convention. There are now 19 allowlisted inputs, including the three
+documented retrospective proxies. See the root DATA_DICTIONARY.md and README.md.
+
+`circuit_pit_duration_prior` is an **F** input in `src/features.py` and the model
 table `data/processed/features.csv`. For each row it is the median of individual
 cached pit-stop durations, in seconds, at the same `circuit_id` in usable races
 with `race_date` **strictly less than** that row's date. A usable race has at
@@ -93,7 +99,7 @@ No history means **NaN**, saved as an empty CSV cell; no global fallback or
 imputation is applied. The rebuilt table retains all 3,458 rows; 640 have no
 eligible historical duration. The feature builder and evaluation loader preserve this
 as a numeric missing value. Other CSV readers using `keep_default_na=False`
-should also pass `na_values={'circuit_pit_loss_prior': ['']}`. Any eventual
+should also pass `na_values={'circuit_pit_duration_prior': ['']}`. Any eventual
 imputation must be fitted on training data only.
 
 Despite its requested name, this feature measures **pit-lane duration**, not
@@ -132,8 +138,8 @@ prior above was added; the other proposed additions were not generated.
 | `track_temp_mean`, `track_temp_max`, `humidity_mean`, `wind_speed_mean`, `rain_share` | X for observed race-session summaries; F only from pre-start forecasts | Cached weather has historical air temperature and precipitation, not track temperature, humidity, wind or FastF1 boolean Rainfall samples. Rainfall sample share cannot be replaced silently with precipitation totals. Archived pre-start forecasts are absent. |
 | `sc_count`, `sc_laps`, `vsc_count`, `vsc_laps` | X | No track-status timeline in this route/cache. Pit-stop duration cannot reliably reconstruct SC/VSC deployments or laps. |
 | `circuit_sc_rate_prior` | F | Needs historical SC counts, unavailable here. If later built, use earlier seasons only as specified. |
-| `circuit_avg_stops_prior` | F | Derivable from cached stop counts and circuit metadata, but not added in this task. Its proposed definition requires earlier seasons only. |
-| `pit_loss_median` | X measured in current race; F as a separate historical estimate | Net in-lap/out-lap loss needs lap timing and a normal-lap reference absent from the current cache. `circuit_pit_loss_prior` is only the documented pit-duration proxy. |
+| `circuit_avg_stops_prior` | F | Now added using strictly earlier usable race dates (the latest requested definition supersedes the earlier-season-only proposal). |
+| `pit_loss_median` | X measured in current race; F as a separate historical estimate | Net in-lap/out-lap loss needs lap timing and a normal-lap reference absent from the current cache. `circuit_pit_duration_prior` is only the documented pit-duration proxy. |
 | `deg_soft`, `deg_medium`, `deg_hard` | X measured in current race; F as separate earlier-season estimates | No compound, tyre-life or suitable lap-time series, so neither race degradation nor its historical estimates can be built here. |
 | `team` | F | Already represented by `constructor` and model input `constructor_group`; no extra team field added. |
 | `quali_position` | F | Qualifying results are not cached. The free results route can provide qualifying separately, but downloading is forbidden. Race grid position is not an interchangeable substitute. |
@@ -153,3 +159,17 @@ SC/VSC lap counts also require a precise rule for mapping status changes to
 laps; they should not be estimated from long stops. Existing race-weather and
 actual-lap proxies remain documented exceptions in `features.py`; this change
 does not reclassify them as information genuinely known before the race.
+
+## Expanding-window validation update
+
+Raw grid_position is reference only, excluded from model inputs. Grid zero is
+a pit-lane start; grid_position_clean and pit_lane_start are inputs. The pit
+feature is now circuit_pit_duration_prior (old pit_loss name removed).
+Strictly earlier stop-history features and two strict-variant proxies are
+specified in the root DATA_DICTIONARY.md. Source columns and row identifiers
+are preserved. Current validation reports from src/train.py are
+expanding_validation.txt, expanding_validation.csv and
+expanding_validation_summary.csv. These use validation seasons 2021–2024,
+training only on preceding seasons. They include all three historical
+baselines, both random-forest variants, actual race counts and season spread.
+2025 remains excluded from model fitting, prediction and evaluation.

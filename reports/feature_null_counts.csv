@@ -33,4 +33,12 @@ is_street_circuit,0
 constructor_group,0
 is_2022_plus,0
 is_usable,0
-circuit_pit_loss_prior,640
+pit_lane_start,0
+grid_position_clean,0
+circuit_pit_duration_prior,640
+circuit_avg_stops_prior,640
+circuit_races_prior,0
+circuit_avg_stops_last3,640
+recent_avg_stops_prior,20
+circuit_laps_last_year,1279
+circuit_month_air_temp_prior,1300

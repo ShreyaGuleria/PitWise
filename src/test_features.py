@@ -5,8 +5,9 @@ from unittest.mock import patch
 import pandas as pd
 
 import build_dataset as dataset
-from build_features import build_features, circuit_pit_loss_prior, CONSTRUCTOR_GROUPS, STREET_CIRCUITS
-from features import FEATURE_COLUMNS, NOT_FOR_MODEL
+from build_features import build_features, circuit_pit_duration_prior, CONSTRUCTOR_GROUPS, STREET_CIRCUITS
+from features import FEATURE_COLUMNS, ALL_FEATURE_COLUMNS, NOT_FOR_MODEL
+from history import HISTORY_COLUMNS
 
 
 def load_source():
@@ -32,12 +33,19 @@ def test_cached_features():
     assert table.circuit_id.nunique() == 31
     pd.testing.assert_frame_equal(table[source.columns], source, check_exact=True)
     assert (dataset.ROOT / 'data' / 'processed' / 'stops_dataset.csv').read_bytes() == original_bytes
-    other_inputs = [column for column in FEATURE_COLUMNS if column != 'circuit_pit_loss_prior']
+    other_inputs = [column for column in FEATURE_COLUMNS
+                    if column not in HISTORY_COLUMNS + ['circuit_pit_duration_prior']]
     assert not table[other_inputs].replace('', pd.NA).isna().any().any()
-    assert table.circuit_pit_loss_prior.isna().any()  # Deliberate: no historical fallback.
-    assert table.circuit_pit_loss_prior.dropna().between(0, 60, inclusive='neither').all()
+    assert table.circuit_pit_duration_prior.isna().any()  # Deliberate: no historical fallback.
+    assert table.circuit_pit_duration_prior.dropna().between(0, 60, inclusive='neither').all()
     assert table.is_usable.equals(table.exclude_reason.eq('')) and table.is_usable.sum() == 2507
     assert table.is_2022_plus.equals(table.season.ge(2022))
+    assert table.pit_lane_start.equals(source.grid_position.eq(0))
+    assert table.pit_lane_start.any() and (~table.pit_lane_start).any()
+    assert table.loc[table.pit_lane_start, 'grid_position_clean'].eq(20).all()
+    assert table.loc[~table.pit_lane_start, 'grid_position_clean'].equals(
+        table.loc[~table.pit_lane_start, 'grid_position'])
+    assert pd.api.types.is_bool_dtype(table.pit_lane_start)
     date = pd.to_datetime(table.race_date)
     assert table.month.equals(date.dt.month) and table.day_of_year.equals(date.dt.dayofyear)
     assert table.is_street_circuit.equals(table.circuit_id.isin(STREET_CIRCUITS))
@@ -45,16 +53,17 @@ def test_cached_features():
     assert table.loc[table.circuit_id.eq('baku'), 'altitude_m'].eq(-18).all()
     assert table.loc[table.season.eq(2021) & table.circuit_id.eq('spa'), 'scheduled_laps'].eq(1).all()
     assert set(FEATURE_COLUMNS).isdisjoint(NOT_FOR_MODEL)
-    assert len(FEATURE_COLUMNS) == len(set(FEATURE_COLUMNS)) == 14
+    assert len(FEATURE_COLUMNS) == len(set(FEATURE_COLUMNS)) == 19
+    assert 'grid_position' not in FEATURE_COLUMNS and 'grid_position_clean' in FEATURE_COLUMNS
     assert len(NOT_FOR_MODEL) == len(set(NOT_FOR_MODEL))
-    assert set(table.columns) == set(FEATURE_COLUMNS) | set(NOT_FOR_MODEL)
+    assert set(table.columns) == set(ALL_FEATURE_COLUMNS) | set(NOT_FOR_MODEL)
     assert table.loc[table.stops_class.eq(''), 'num_stops'].eq(0).all()
     # The saved UTF-8 artifact must reproduce the in-memory enrichment exactly.
     path = dataset.ROOT / 'data' / 'processed' / 'features.csv'
     if path.exists():
         path.read_bytes().decode('utf-8', errors='strict')
         saved = pd.read_csv(path, keep_default_na=False, float_precision='round_trip',
-                            na_values={'circuit_pit_loss_prior': ['']})
+                            na_values={column: [''] for column in ALL_FEATURE_COLUMNS})
         # CSV inference widens the calendar int32 fields to int64.
         pd.testing.assert_frame_equal(saved, table, check_exact=True, check_dtype=False)
 
@@ -97,7 +106,7 @@ def test_constructor_aliases():
         assert CONSTRUCTOR_GROUPS[name] == 'Alpine'
 
 
-def test_pit_loss_history():
+def test_pit_duration_history():
     table = pd.DataFrame([
         (2023, 1, 'a', '2023-01-01', True),
         (2023, 1, 'a', '2023-01-01', False),  # Same race: do not count stops twice.
@@ -119,7 +128,7 @@ def test_pit_loss_history():
     with patch.object(dataset, 'fetch_pit_stops', side_effect=cached_stops) as fetch, \
          patch('requests.sessions.Session.request', side_effect=AssertionError('Network forbidden')):
         before = dataset.CACHE_ONLY
-        prior = circuit_pit_loss_prior(table)
+        prior = circuit_pit_duration_prior(table)
         assert dataset.CACHE_ONLY == before
         assert fetch.call_count == 7
         assert all(call.args[1] != 2 for call in fetch.call_args_list)
@@ -129,14 +138,14 @@ def test_pit_loss_history():
         assert prior.iloc[5] == 40  # Pooled stop median, not mean of race medians.
         assert prior.iloc[6:].isna().all()
         raw[3], raw[4], raw[5] = ['1'], ['1'], ['59']
-        changed = circuit_pit_loss_prior(table)
+        changed = circuit_pit_duration_prior(table)
         pd.testing.assert_series_equal(prior.iloc[:5], changed.iloc[:5])
         # Row order cannot change which history is available.
         shuffled = table.sample(frac=1, random_state=7)
-        pd.testing.assert_series_equal(circuit_pit_loss_prior(shuffled).sort_index(), changed)
+        pd.testing.assert_series_equal(circuit_pit_duration_prior(shuffled).sort_index(), changed)
 
 
-def test_pit_loss_cache_miss():
+def test_pit_duration_cache_miss():
     table = pd.DataFrame([(2023, 1, 'missing', '2023-01-01', True)],
                          columns=['season', 'round', 'circuit_id', 'race_date', 'is_usable'])
     with TemporaryDirectory(dir=dataset.ROOT / '.tmp') as directory, \
@@ -144,7 +153,7 @@ def test_pit_loss_cache_miss():
          patch('requests.sessions.Session.request', side_effect=AssertionError('Network forbidden')) as request:
         before = dataset.CACHE_ONLY
         try:
-            circuit_pit_loss_prior(table)
+            circuit_pit_duration_prior(table)
         except RuntimeError as error:
             assert 'downloads disabled' in str(error)
         else:
@@ -155,6 +164,6 @@ def test_pit_loss_cache_miss():
 
 if __name__ == '__main__':
     for test in (test_cached_features, test_elevation_fallback_once_per_circuit, test_constructor_aliases,
-                 test_pit_loss_history, test_pit_loss_cache_miss):
+                 test_pit_duration_history, test_pit_duration_cache_miss):
         test()
         print(f'{test.__name__}: passed')
