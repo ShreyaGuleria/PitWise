@@ -1,0 +1,90 @@
+Pit-stop baselines: 2024 validation only
+Usable rows with stops_class in 1, 2, 3+; season split, never row split.
+Train: 2018-2023; validation: 2024; test: 2025 (counts only, no metrics).
+
+Class counts:
+stops_class    1    2   3+
+split                     
+train        880  735  169
+validation   153  175   35
+test         206  129   25
+
+Validation rows at circuits absent from usable training: 0
+B0: always predict training majority (1).
+B1: majority of driver labels at the circuit in all strictly earlier usable races; fallback B0.
+B2: majority of driver labels pooled across the last 3 earlier usable circuit races;
+    with fewer than 3 races, fallback B1, then B0.
+History updates after each race; earlier validation labels may inform later races.
+Same-date and future labels never enter history. Ties favor 1, then 2, then 3+.
+Metrics use all three classes; zero denominators produce 0.
+
+B0
+accuracy: 0.4215
+balanced_accuracy: 0.3333
+macro_f1: 0.1977
+    precision  recall     f1
+1      0.4215  1.0000 0.5930
+2      0.0000  0.0000 0.0000
+3+     0.0000  0.0000 0.0000
+Confusion matrix (rows = actual, columns = predicted; order 1, 2, 3+):
+      1  2  3+
+1   153  0   0
+2   175  0   0
+3+   35  0   0
+
+B1
+accuracy: 0.6088
+balanced_accuracy: 0.4560
+macro_f1: 0.4242
+    precision  recall     f1
+1      0.5541  0.8366 0.6667
+2      0.7045  0.5314 0.6059
+3+     0.0000  0.0000 0.0000
+Confusion matrix (rows = actual, columns = predicted; order 1, 2, 3+):
+      1   2  3+
+1   128  25   0
+2    82  93   0
+3+   21  14   0
+
+B2
+accuracy: 0.5730
+balanced_accuracy: 0.4807
+macro_f1: 0.4728
+    precision  recall     f1
+1      0.6333  0.7451 0.6847
+2      0.6084  0.4971 0.5472
+3+     0.1750  0.2000 0.1867
+Confusion matrix (rows = actual, columns = predicted; order 1, 2, 3+):
+      1   2  3+
+1   114  39   0
+2    55  87  33
+3+   11  17   7
+
+grid_position diagnostics (filtered usable rows, all splits):
+min=0, max=20, zeros=29
+By split:
+train: min=0, max=20, zeros=28
+validation: min=0, max=20, zeros=1
+test: min=1, max=20, zeros=0
+Zero likely denotes a pit-lane start or an unassigned grid slot, not pole position.
+The project README documents preserving supplied zero grid values for pit-lane starts.
+Suggest verifying the source, then representing pit-lane starts explicitly with an indicator
+and a missing/appropriate grid value; avoid treating 0 as better than pole. No recoding applied.
+
+Interpretation:
+Best accuracy: B1 (0.6088).
+Best balanced_accuracy: B2 (0.4807).
+Best macro_f1: B2 (0.4728).
+B0 measures how well a constant guess exploits class imbalance; B1 adds circuit history;
+B2 emphasizes recent circuit strategy. Balanced accuracy averages class recalls; macro F1
+gives each class equal weight, so common-class accuracy alone is not enough.
+B0 correctly identifies 0.0% of 3+ stop cases.
+B1 correctly identifies 0.0% of 3+ stop cases.
+B2 correctly identifies 20.0% of 3+ stop cases.
+Prefer the macro-F1/balanced-accuracy leader for equal attention to all classes;
+also retain the accuracy leader as the benchmark for overall correct predictions.
+The model should beat these validation benchmarks, especially macro F1 and balanced accuracy,
+while recovering the rarer classes. A zero class recall means that class is never identified correctly.
+These results cover outcome-filtered usable drivers, not every starter. Future model inputs
+scheduled_laps and weather retain the retrospective-proxy limitations documented in features.py.
+2025 test performance has not been computed. Keep it held out until explicitly authorized.
